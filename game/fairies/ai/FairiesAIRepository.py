@@ -134,10 +134,8 @@ class FairiesAIRepository(AIDistrict, ServerBase):
         # The Magic Word Manager
         self.magicWordManager = FairiesMagicWordManagerAI(self)
         self.magicWordManager.generateOtpObject(
-            self.getGameDoId(), COMMUNITY_ALERTS_ALL,
+            self.districtId, COMMUNITY_ALERTS_ALL,
             doId=self.allocateChannel())
-
-        self.setAIReceiver(self.magicWordManager.getDoId(), self.ourChannel)
 
         # mark district as avaliable
         self.district.b_setAvailable(1)
