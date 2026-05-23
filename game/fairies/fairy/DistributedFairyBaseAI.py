@@ -52,6 +52,13 @@ class DistributedFairyBaseAI(DistributedObjectAI):
     def setFairyDNA(self, fairyDNA: Sequence[int]) -> None:
         self.fairyDNA = FairyDNA.unpackFromTuple(fairyDNA)
 
+    def d_setFairyDNA(self, fairyDNA: Sequence[int]):
+        self.sendUpdate("setFairyDNA", [fairyDNA])
+
+    def b_setFairyDNA(self, fairyDNA: Sequence[int]):
+        self.setFairyDNA(fairyDNA)
+        self.d_setFairyDNA(fairyDNA)
+
     def getFairyDNA(self) -> tuple[int, ...]:
         return self.fairyDNA.asTuple()
 

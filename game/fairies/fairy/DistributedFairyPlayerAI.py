@@ -175,7 +175,7 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
             pouch = self.air.inventoryManager.getPouch(self.doId)
             self.d_setPouch(pouch)
             self.d_setPouch(pouch)
-    
+
     def consumePouchItem(self, itemId, amount):
         if itemId == 22543:
             self.sendUpdateToAvatarId(self.doId, "setAura", [13])

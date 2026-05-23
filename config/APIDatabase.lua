@@ -236,7 +236,7 @@ function handleGetStoredValues(participant, dgi)
                         data.avatar.eye,
                         data.avatar.wing,
                         data.avatar.hair_color,
-                        0, -- hair_color2? What is this
+                        data.avatar.hair_color2,
                         data.avatar.eye_color,
                         data.avatar.skin_color,
                         data.avatar.wing_color,
@@ -366,14 +366,21 @@ function handleSetStoredValues(participant, dgi)
             value = value[1]
         end
         if field == "setFairyDNA" then
-            -- We do the objectName check to ensure that the DNA gets updated once on the API
-            -- in case setFairyDNA is updated on DistributedFairyPlayer.
-            -- (It's still a good idea to call setFairyDNA on the AI)
-            if data.objectName == "DistributedFairyPlayer" then
-                goto finish
-            end
-            -- TODO: Do we need to do anything here like we do in World of Cars?
-            -- https://github.com/WorldOfCarsRE/game-server/blob/main/config/APIDatabase.lua#L327
+            Api2Value["talent"] = value[1]
+            Api2Value["head"] = value[2]
+            Api2Value["height"] = value[3]
+            Api2Value["body"] = value[4]
+            Api2Value["hair_back"] = value[5]
+            Api2Value["hair_front"] = value[6]
+            Api2Value["face"] = value[7]
+            Api2Value["eye"] = value[8]
+            Api2Value["wing"] = value[9]
+            Api2Value["hair_color"] = value[10]
+            Api2Value["hair_color2"] = value[11]
+            Api2Value["eye_color"] = value[12]
+            Api2Value["skin_color"] = value[13]
+            Api2Value["wing_color"] = value[14]
+            Api2Value["gender"] = value[15]
         else
             if Field2Api[field] ~= nil then
                 Api2Value[Field2Api[field]] = value
