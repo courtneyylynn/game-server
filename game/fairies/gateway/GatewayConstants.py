@@ -90,7 +90,7 @@ GATEWAYS: dict[int, list[dict]] = {
             # Springtime Orchard
             "name": "9028",
             "position": (1995, 760),
-            "targetLocationName": "default",
+            "targetLocationName": "fromBeck'sAnimalNursery",
             "targetZoneID": ZoneConstants.SPRINGTIME_ORCHARD,
         },
     ],
@@ -260,7 +260,15 @@ GATEWAYS: dict[int, list[dict]] = {
             "rewardList": [fc.IVY, fc.PINE_NEEDLES, fc.TWIGS],
         },
     ],
-    # Gales
+    ZoneConstants.GALES_OUTFITTERS: [
+        {
+            # Snowcap Glade
+            "name": "9108",
+            "position": (810, 380),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.SNOWCAP_GLADE,
+        },
+    ],
     ZoneConstants.SNOWCAP_GLADE: [
         {
             # Evergreen Overlook
@@ -300,7 +308,15 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.GALES_OUTFITTERS,
         }
     ],
-    # Ember's
+    ZoneConstants.EMBERS_ESSENTIALS: [
+        {
+            # Chilly Falls
+            "name": "9116",
+            "position": (780, 390),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.CHILLY_FALLS,
+        },
+    ],
 
     # ════════════════════════════════════════════════════════════════════════════════════ #
     #                                    Summer Gateways                                   #
@@ -400,7 +416,15 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.PALM_TREE_COVE,
         },
     ],
-    # Pixie Post Office
+    ZoneConstants.PIXIE_POST_OFFICE: [
+        {
+            # Neverfruit Grove
+            "name": "9279",
+            "position": (74, 220),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.NEVERFRUIT_GROVE,
+        },
+    ],
     ZoneConstants.SUNFLOWER_GULLY: [
         {
             # Neverfruit Grove
@@ -496,6 +520,15 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.SNOWCAP_GLADE,
         },
     ],
+    ZoneConstants.SUMMIT_STYLE: [
+        {
+            # Acorn Summit
+            "name": "9068",
+            "position": (780, 400),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.ACORN_SUMMIT,
+        },
+    ],
     ZoneConstants.COTTONPUFF_FIELD: [
         {
             # Acorn Summit
@@ -552,7 +585,7 @@ GATEWAYS: dict[int, list[dict]] = {
             # Cottonpuff Field
             "name": "9076",
             "position": (1055, 1325),
-            "targetLocationName": "",
+            "targetLocationName": "fromMapleHill",
             "targetZoneID": ZoneConstants.COTTONPUFF_FIELD,
         },
         {
@@ -580,21 +613,21 @@ GATEWAYS: dict[int, list[dict]] = {
             # Pumpkin Patch
             "name": "9098",
             "position": (0, 805),
-            "targetLocationName": "",
+            "targetLocationName": "fromMapleHill",
             "targetZoneID": ZoneConstants.PUMPKIN_PATCH,
         },
         {
             # Springtime Orchard
             "name": "9028",
             "position": (1075, 445),
-            "targetLocationName": "",
+            "targetLocationName": "fromMapleHill",
             "targetZoneID": ZoneConstants.SPRINGTIME_ORCHARD,
         },
         {
             # Acorn Summit
             "name": "9071",
             "position": (255, 225),
-            "targetLocationName": "",
+            "targetLocationName": "fromMapleHill",
             "targetZoneID": ZoneConstants.ACORN_SUMMIT,
         },
     ],
@@ -623,14 +656,14 @@ GATEWAYS: dict[int, list[dict]] = {
             # Dewdrop Vale
             "name": "9048",
             "position": (1730, 750),
-            "targetLocationName": "",
+            "targetLocationName": "fromSpringtimeOrchard",
             "targetZoneID": ZoneConstants.DEWDROP_VALE,
         },
         {
             # Havendish
             "name": "9170",
             "position": (0, 450),
-            "targetLocationName": "",
+            "targetLocationName": "fromSpringtimeOrchard",
             "targetZoneID": ZoneConstants.HAVENDISH_SQUARE,
         },
         {
@@ -644,7 +677,7 @@ GATEWAYS: dict[int, list[dict]] = {
             # CherryBlossom Heights
             "name": "9037",
             "position": (1255, 255),
-            "targetLocationName": "",
+            "targetLocationName": "fromSpringtimeOrchard",
             "targetZoneID": ZoneConstants.CHERRYBLOSSOM_HEIGHTS,
         },
     ],
@@ -653,7 +686,7 @@ GATEWAYS: dict[int, list[dict]] = {
             # Dewdrop Vale
             "name": "9050",
             "position": (250, 850),
-            "targetLocationName": "",
+            "targetLocationName": "fromNeverberryThicket",
             "targetZoneID": ZoneConstants.DEWDROP_VALE,
         },
         {
@@ -677,6 +710,36 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetLocationName": "",
             "targetZoneID": ZoneConstants.WATER_WEB_GAME,
             "rewardList": [fc.LILY_PETALS, fc.MEADOW_GRASS, fc.SPIDER_SILK]
+        },
+        {
+            # Treetop Bend
+            "name": "9062",
+            "position": (1620, 90),
+            "targetLocationName": "fromNeverberryThicket",
+            "targetZoneID": ZoneConstants.TREETOP_BEND,
+        },
+        {
+            # Harmony's Sweet Shop
+            "name": "9286",
+            "position": (1183, 274),
+            "targetLocationName": "default",
+            "targetZoneID": ZoneConstants.HARMONYS_SWEET_SHOP,
+        },
+        {
+            # Cherryblossom Heights
+            "name": "9039",
+            "position": (410, 208),
+            "targetLocationName": "fromNeverberryThicket",
+            "targetZoneID": ZoneConstants.CHERRYBLOSSOM_HEIGHTS,
+        },
+    ],
+    ZoneConstants.HARMONYS_SWEET_SHOP: [
+        {
+            # Neverberry Thicket
+            "name": "9287",
+            "position": (150, 675),
+            "targetLocationName": "fromZone111000",
+            "targetZoneID": ZoneConstants.NEVERBERRY_THICKET,
         },
     ]
     
