@@ -22,6 +22,44 @@ class FairyInventoryMgrAI(DistributedObjectGlobalAI):
 
         avatar.d_setPouch(self.getPouch(avId))
 
+    def wardrobeConversion(self, inv_id):
+        avId = self.air.getAvatarIdFromSender()
+        avatar = self.air.doId2do.get(avId)
+
+        CONV_COSTS = {
+            "Shirt": 6,
+            "Skirt": 7,
+            "Shoes": 5,
+            "Belt": 4,
+            "HeadItem": 5,
+            "Necklace": 3,
+            "WristItem": 3,
+            "AnkleItem": 3,
+        }
+
+        result = self.air.mongoInterface.mongodb.fairies.find_one(
+            {"_id": avId, "avatar.items.inv_id": inv_id},
+            {"avatar.items.$": 1}
+        )
+        if result:
+            item_type = result["avatar"]["items"][0]["type"]
+        else:
+            print("WARDROBECONVERSION PANIC")
+            return
+
+        self.air.mongoInterface.mongodb.fairies.update_one(
+            {"_id": avId},
+            {
+                "$set": {
+                    "avatar.items.$[item].howAcquired": 0
+                }
+            },
+            array_filters=[{"item.inv_id": inv_id}]      
+        )
+
+        avatar.takeGold(CONV_COSTS[item_type])
+
+
     def addIngredientsToPouch(self, avId: int, itemID: int, itemCount: int, slot: int) -> bool:
         result = self.air.mongoInterface.mongodb.fairies.update_one(
             {"_id": avId, "pouch.item_id": itemID},
