@@ -128,24 +128,6 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.FAIRY_TALE_THEATER,
         },
     ],
-    ZoneConstants.COALS_CLOTHIERS: [
-        {
-            # Cottonpuff Field (west)
-            "name": "9213",
-            "position": (223, 260),
-            "targetLocationName": "fromCoal'sClothiersShop",
-            "targetZoneID": ZoneConstants.COTTONPUFF_FIELD,
-        },
-    ],
-    ZoneConstants.BECKS_ANIMAL_NURSERY: [
-        {
-            # Springtime Orchard (southwest)
-            "name": "9207",
-            "position": (140, 120),
-            "targetLocationName": "fromBeck'sAnimalNursery",
-            "targetZoneID": ZoneConstants.SPRINGTIME_ORCHARD,
-        },
-    ],
     ZoneConstants.THE_BALLROOM: [
         {
             # Havendish Square
@@ -351,7 +333,6 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.EVERGREEN_OVERLOOK,
         },
     ],
-
     ZoneConstants.ICE_PALACE: [
         {
             # Chilly Falls (west)
@@ -359,6 +340,15 @@ GATEWAYS: dict[int, list[dict]] = {
             "position": (175, 610),
             "targetLocationName": "fromZone303",
             "targetZoneID": ZoneConstants.CHILLY_FALLS,
+        },
+    ],
+    ZoneConstants.SPIKES_SWEETS: [
+        {
+            # Frosted Forest (west)
+            "name": "9288",
+            "position": (185, 157),
+            "targetLocationName": "fromZone110011",
+            "targetZoneID": ZoneConstants.FROSTED_FOREST,
         },
     ],
 
@@ -633,6 +623,15 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.COALS_CLOTHIERS,
         },
     ],
+    ZoneConstants.COALS_CLOTHIERS: [
+        {
+            # Cottonpuff Field (west)
+            "name": "9213",
+            "position": (223, 260),
+            "targetLocationName": "fromCoal'sClothiersShop",
+            "targetZoneID": ZoneConstants.COTTONPUFF_FIELD,
+        },
+    ],
     ZoneConstants.MAPLE_TREE_HILL: [
         {
             # Cottonpuff Field
@@ -684,9 +683,6 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.ACORN_SUMMIT,
         },
     ],
-    # ════════════════════════════════════════════════════════════════════════════════════ #
-    #                                   Pumpkin Patch Gateways                             #
-    # ════════════════════════════════════════════════════════════════════════════════════ #
     ZoneConstants.PUMPKIN_PATCH: [
         {
             # Acorn Summit (north)
@@ -709,55 +705,6 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetLocationName": "",
             "targetZoneID": ZoneConstants.HARVEST_HUSTLE_GAME,
             "rewardList": [fc.ACORNS, fc.BLUEBERRIES, fc.RASPBERRIES],
-        },
-    ],
-
-    # ════════════════════════════════════════════════════════════════════════════════════ #
-    #                              Cherryblossom Heights Gateways                          #
-    # ════════════════════════════════════════════════════════════════════════════════════ #
-    ZoneConstants.CHERRYBLOSSOM_HEIGHTS: [
-        {
-            # Springtime Orchard (southwest)
-            "name": "9034",
-            "position": (990, 940),
-            "targetLocationName": "fromCherryblossomHeights",
-            "targetZoneID": ZoneConstants.SPRINGTIME_ORCHARD,
-        },
-        {
-            # Neverberry Thicket (southeast)
-            "name": "9056",
-            "position": (1700, 950),
-            "targetLocationName": "fromCherryblossomHeights",
-            "targetZoneID": ZoneConstants.NEVERBERRY_THICKET,
-        },
-        {
-            # Rosetta's Garden (Rosetta face gateway)
-            "name": "9149",
-            "position": (90, 555),
-            "targetLocationName": "default",
-            "targetZoneID": ZoneConstants.ROSETTAS_GARDEN,
-        },
-        {
-            # Petal Pick-Up
-            "name": "9014",
-            "position": (385, 100),
-            "targetLocationName": "",
-            "targetZoneID": ZoneConstants.PETAL_PICKUP_GAME,
-            "rewardList": [fc.ROSE_PETALS, fc.BUTTERCUP_PETALS, fc.DAISY_PETALS],
-        },
-        {
-            # Treetop Bend (northeast)
-            "name": "9061",
-            "position": (1565, 420),
-            "targetLocationName": "fromCherryblossomHeights",
-            "targetZoneID": ZoneConstants.TREETOP_BEND,
-        },
-        {
-            # Daisy's Dyes
-            "name": "9017",
-            "position": (1345, 645),
-            "targetLocationName": "shopEntrance",
-            "targetZoneID": ZoneConstants.DAISYS_DYES,
         },
     ],
 
@@ -870,13 +817,49 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.NEVERBERRY_THICKET,
         },
     ],
-    ZoneConstants.SPIKES_SWEETS: [
+    ZoneConstants.CHERRYBLOSSOM_HEIGHTS: [
         {
-            # Frosted Forest (west)
-            "name": "9288",
-            "position": (185, 157),
-            "targetLocationName": "fromZone110011",
-            "targetZoneID": ZoneConstants.FROSTED_FOREST,
+            # Springtime Orchard (southwest)
+            "name": "9034",
+            "position": (990, 940),
+            "targetLocationName": "fromCherryblossomHeights",
+            "targetZoneID": ZoneConstants.SPRINGTIME_ORCHARD,
+        },
+        {
+            # Neverberry Thicket (southeast)
+            "name": "9056",
+            "position": (1700, 950),
+            "targetLocationName": "fromCherryblossomHeights",
+            "targetZoneID": ZoneConstants.NEVERBERRY_THICKET,
+        },
+        {
+            # Rosetta's Garden (Rosetta face gateway)
+            "name": "9149",
+            "position": (90, 555),
+            "targetLocationName": "default",
+            "targetZoneID": ZoneConstants.ROSETTAS_GARDEN,
+        },
+        {
+            # Petal Pick-Up
+            "name": "9014",
+            "position": (385, 100),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.PETAL_PICKUP_GAME,
+            "rewardList": [fc.ROSE_PETALS, fc.BUTTERCUP_PETALS, fc.DAISY_PETALS],
+        },
+        {
+            # Treetop Bend (northeast)
+            "name": "9061",
+            "position": (1565, 420),
+            "targetLocationName": "fromCherryblossomHeights",
+            "targetZoneID": ZoneConstants.TREETOP_BEND,
+        },
+        {
+            # Daisy's Dyes
+            "name": "9017",
+            "position": (1345, 645),
+            "targetLocationName": "shopEntrance",
+            "targetZoneID": ZoneConstants.DAISYS_DYES,
         },
     ],
     ZoneConstants.DAISYS_DYES: [
@@ -888,7 +871,15 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.CHERRYBLOSSOM_HEIGHTS,
         },
     ],
-
+    ZoneConstants.BECKS_ANIMAL_NURSERY: [
+        {
+            # Springtime Orchard (southwest)
+            "name": "9207",
+            "position": (140, 120),
+            "targetLocationName": "fromBeck'sAnimalNursery",
+            "targetZoneID": ZoneConstants.SPRINGTIME_ORCHARD,
+        },
+    ],
     ZoneConstants.GARDEN_SUPPLY: [
         {
             # Dewdrop Vale (Brook's shop return sign)
@@ -898,10 +889,6 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.DEWDROP_VALE,
         },
     ],
-
-    # ════════════════════════════════════════════════════════════════════════════════════ #
-    #                                   Dewdrop Vale Gateways                              #
-    # ════════════════════════════════════════════════════════════════════════════════════ #
     ZoneConstants.DEWDROP_VALE: [
         {
             # Springtime Orchard (northwest)
@@ -947,7 +934,6 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.NEVERBERRY_THICKET,
         },
     ],
-
     ZoneConstants.TREETOP_BEND: [
         {
             # Seed Sorting Game
@@ -1027,5 +1013,4 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.TREETOP_BEND,
         },
     ],
-
 }
