@@ -476,6 +476,12 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetLocationName": "fromZone401",
             "targetZoneID": ZoneConstants.NEVERFRUIT_GROVE,
         },
+        {   # Troop Glowworm Hideout
+            "name": "9305",
+            "position": (905,640),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.TROOP_GLOWWORM_HIDEOUT,
+        },
         {
             # Pheobe's
             "name": "9147",
@@ -506,8 +512,16 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.COTTONPUFF_FIELD,
         }
     ],
-    # Phoebe's
 
+    ZoneConstants.PHOEBES_PARTY_FAVORS: [
+        {
+            # Sunflower Gully
+            "name": "9136",
+            "position": (610, 710),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.SUNFLOWER_GULLY,
+        },
+    ],
     # ════════════════════════════════════════════════════════════════════════════════════ #
     #                                    Autumn Gateways                                   #
     # ════════════════════════════════════════════════════════════════════════════════════ #
@@ -587,12 +601,19 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetLocationName": "",
             "targetZoneID": ZoneConstants.SUNFLOWER_GULLY,
         },
+        {   # Troop Turtle Hideout
+            "name": "9304",
+            "position": (330,815),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.TROOP_TURTLE_HIDEOUT,
+        },
         {
             # Tinker Toss
             "name": "9145",
             "position": (632, 745),
             "targetLocationName": "",
             "targetZoneID": ZoneConstants.TINKER_TOSS_GAME,
+            "rewardList": [fc.OAK_LEAVES, fc.HONEYCOMBS, fc.TWIGS],
         },
         {
             # Maple Tree Hill
@@ -681,6 +702,13 @@ GATEWAYS: dict[int, list[dict]] = {
             "position": (255, 225),
             "targetLocationName": "fromMapleHill",
             "targetZoneID": ZoneConstants.ACORN_SUMMIT,
+        },
+        {
+            # Troop Rabbit Hideout
+            "name": "9301",
+            "position": (625, 280),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.TROOP_RABBIT_HIDEOUT,
         },
     ],
     ZoneConstants.PUMPKIN_PATCH: [
@@ -825,6 +853,12 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetLocationName": "fromCherryblossomHeights",
             "targetZoneID": ZoneConstants.SPRINGTIME_ORCHARD,
         },
+        {   # Troop Butterfly Hideout
+            "name": "9302",
+            "position": (880,815),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.TROOP_BUTTERFLY_HIDEOUT,
+        },
         {
             # Neverberry Thicket (southeast)
             "name": "9056",
@@ -896,6 +930,12 @@ GATEWAYS: dict[int, list[dict]] = {
             "position": (98, 410),
             "targetLocationName": "fromSpringtimeValley",
             "targetZoneID": ZoneConstants.SPRINGTIME_ORCHARD,
+        },
+        {   # Troop Otter Hideout
+            "name": "9303",
+            "position": (508,330),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.TROOP_OTTER_HIDEOUT,
         },
         {
             # Bubble Bounce
@@ -1011,6 +1051,54 @@ GATEWAYS: dict[int, list[dict]] = {
             "position": (195, 231),
             "targetLocationName": "",
             "targetZoneID": ZoneConstants.TREETOP_BEND,
+        },
+    ],
+# ════════════════════════════════════════════════════════════════════════════════════ #
+#                             Troop Hideout Gateways                                   #
+# ════════════════════════════════════════════════════════════════════════════════════ #
+    ZoneConstants.TROOP_BUTTERFLY_HIDEOUT: [
+        {
+            # Cherryblossom Heights
+            "name": "9036",
+            "position": (800, 450),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.CHERRYBLOSSOM_HEIGHTS,
+        },
+    ],
+    ZoneConstants.TROOP_OTTER_HIDEOUT: [
+        {
+            # Dewdrop Vale
+            "name": "9044",
+            "position": (800, 390),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.DEWDROP_VALE,
+        },
+    ],
+    ZoneConstants.TROOP_TURTLE_HIDEOUT: [
+        {
+            # Cottonpuff Field
+            "name": "9076",
+            "position": (800, 380),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.COTTONPUFF_FIELD,
+        },
+    ],
+    ZoneConstants.TROOP_GLOWWORM_HIDEOUT: [
+        {
+            # Sunflower Gully
+            "name": "9136",
+            "position": (825, 400),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.SUNFLOWER_GULLY,
+        },
+    ],
+    ZoneConstants.TROOP_RABBIT_HIDEOUT: [
+        {
+            # Maple Tree Hill
+            "name": "9084",
+            "position": (820, 450),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.MAPLE_TREE_HILL,
         },
     ],
 }
