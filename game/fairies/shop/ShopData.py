@@ -2862,7 +2862,7 @@ SHOPS = [
                     ShopItem(itemId=5108, price=10, goldPrice=2), # Will 'O Whisp Bangs
                     ShopItem(itemId=5101, price=10, goldPrice=2), # Long Swept Bangs
                     ShopItem(itemId=5089, price=10, goldPrice=2), # Braided Tieback
-                    ShopItem(itemId=5098, price=10, goldPrice=2), # Short Twists
+                    ShopItem(itemId=5109, price=10, goldPrice=2), # Short Twists
                     ShopItem(itemId=5092, price=10, goldPrice=2), # Long and Flitterific Locks
                     ShopItem(itemId=5082, price=10, goldPrice=2), # Stylish Ringlets
                     ShopItem(itemId=5033, price=10, goldPrice=2), # Side-Part Swirly Bob
@@ -2919,7 +2919,7 @@ SHOPS = [
                     ShopItem(itemId=5590, price=10, goldPrice=2), # Swept Up
                     ShopItem(itemId=5581, price=10, goldPrice=2), # Bunny Tail Bun
                     ShopItem(itemId=5572, price=10, goldPrice=2), # Long Braided Back
-                    ShopItem(itemId=5588, price=10, goldPrice=2), # Short Twists Back
+                    ShopItem(itemId=5594, price=10, goldPrice=2), # Short Twists Back
                     ShopItem(itemId=5583, price=10, goldPrice=2), # Long and Flitterific Locks Back
                     ShopItem(itemId=5575, price=10, goldPrice=2), # Stylish Ringlets Back
                     ShopItem(itemId=5538, price=10, goldPrice=2), # Swirly Glamour Mane
