@@ -104,7 +104,14 @@ class DistributedFairyShopkeeperNPCAI(DistributedFairyNPCAI):
             priceTotal += requestPrice
 
         # TODO: Support non gold item purchases
-        success = avatar.takeGold(priceTotal) if usingGold else False
+        if usingGold:
+            success = avatar.takeGold(priceTotal) 
+        else:
+            ing_type = shop.collectionsById.get(collectionId).currencyId
+            success = self.air.inventoryManager.removeIngredientsFromPouch(avId, ing_type, priceTotal)
+            avatar.d_syncPouchAfterIngredientGrant()
+            print(ing_type)
+            print(success)
 
         if not success:
             # Send failure purchase response back to the client.
