@@ -596,7 +596,7 @@ dclass DistributedFairyPlayer : DistributedFairyBase { // 80
     teleportResponse(uint32 fairyId, int8 available, uint32 districtId, uint32 zoneId, uint32 roomId); // 499
     setOptionsMask(int32) ownsend db; // 500
     setMoreOptions(string) ownsend db; // 501
-    setItemEvent(uint32, uint32, uint32, uint32) ownsend; // 502
+    setItemEvent(uint32, uint32, uint32, uint32) ownsend ownrecv; // 502
     statusUpdateFromFairy(uint32, uint32); // 503
     badgeAcquired(int16); // 504
     setMeadowFlags(int32) ownrequired broadcast db ownrecv; // 505
@@ -786,7 +786,7 @@ dclass DistributedFairyShopkeeperNPC : DistributedFairyNPC { // 91
     setTryOn(LiteShopItem[]) clsend airecv; // 656
     setTriedOnItems(ShopTriedOnItems[]) broadcast; // 657
     setRequestPurchasePet(PurchaseItem, int16, int16, int8); // 658
-    setRequestDyeItem(uint64, int16, int16, int8, int8); // 659
+    setRequestDyeItem(uint64, int16, int16, int8, int8) clsend airecv; // 659
     setDyePrice(int32 dyeCostItemId, int16 dye1Price, int16 dye2Price, int16 dye1Gold, int16 dye2Gold) required broadcast ram; // 660
     setRequestGiftSet(PurchaseItem[], uint32, uint32, int16, int32); // 661
     setStockLimits(StockUpdate[]); // 662

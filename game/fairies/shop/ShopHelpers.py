@@ -32,4 +32,6 @@ class NPCShop():
         shop.setFamousFairyId(self.shopkeeper.famousFairyId)
         shop.setRoomID(1)
         shop.setShopItems(tuple(c.asTuple() for c in self.collections))
+        if self.shopId == 2000: # Daisy's Dyes
+             shop.setDyePrice(8014, 4, 4, 0, 0)
         shop.generateWithRequired(self.zone)

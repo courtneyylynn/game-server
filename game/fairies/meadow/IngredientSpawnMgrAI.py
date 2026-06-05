@@ -19,7 +19,7 @@ from direct.task.TaskManagerGlobal import taskMgr
 from game.fairies.meadow.DistributedSpawnStackAI import DistributedSpawnStackAI
 from game.fairies.meadow.IngredientSpawnData import ActiveSpawnPool, build_active_spawn_pools
 
-MIN_DISTANCE = 80
+MIN_DISTANCE = 400
 MAX_POSITION_ATTEMPTS = 50
 COLLECT_DELETE_DELAY_SEC = 1.5
 
@@ -68,7 +68,7 @@ class SpawnPool:
         taskName = "ingredient-respawn-%d-%d-%d" % (taskSerial, self.config.zone_id, self.config.item_id)
         taskMgr.doMethodLater(delay, self._respawnTask, taskName)
 
-        self.notify.debug(
+        print(
             "%s collected in zone %d; respawning in %.1fs (%d active)"
             % (self.config.display_name, self.config.zone_id, delay, len(self.activeStacks))
         )
@@ -77,7 +77,15 @@ class SpawnPool:
         if len(self.activeStacks) >= self.config.max_stacks:
             return None
 
-        x, y = self._randomPosition()
+        pos = self._randomPosition()
+        if pos is None:
+            self.notify.warning(
+                "Could not find valid spawn point for %s in zone %d after %d attempts"
+                % (self.config.display_name, self.config.zone_id, MAX_POSITION_ATTEMPTS)
+            )
+            return None
+
+        x, y = pos
         stack = DistributedSpawnStackAI(self.air)
         stack.spawnMgr = self
         stack.setItemID(self.config.item_id)
@@ -91,7 +99,7 @@ class SpawnPool:
         self.activeStacks.add(stack)
         return stack
 
-    def _randomPosition(self) -> tuple[int, int]:
+    def _randomPosition(self) -> tuple[int, int] | None:
         bounds = self.config.bounds
 
         for _ in range(MAX_POSITION_ATTEMPTS):
@@ -101,7 +109,7 @@ class SpawnPool:
             if self._isValidSpawnPoint(x, y):
                 return x, y
 
-        return random.randint(bounds.x_min, bounds.x_max), random.randint(bounds.y_min, bounds.y_max)
+        return None
 
     def _isValidSpawnPoint(self, x: int, y: int) -> bool:
         if not self._isFarEnough(x, y):

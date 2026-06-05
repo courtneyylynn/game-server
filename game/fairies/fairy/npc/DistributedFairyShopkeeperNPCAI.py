@@ -10,6 +10,7 @@ from game.fairies.fairy.structs.ShopItem import ShopItem
 from game.fairies.fairy.structs.OutfitItem import OutfitItem
 
 from game.fairies.shop.ShopData import getShopByZone, getShopOutfitByOutfitId, getShopItemByIndex
+from game.fairies.ai import FairiesConstants as fc
 
 PURCHASE_FAIL = 0
 PURCHASE_SUCCESS = 1
@@ -52,6 +53,7 @@ class DistributedFairyShopkeeperNPCAI(DistributedFairyNPCAI):
         self.dye2Price = dye2Price
         self.dye1Gold = dye1Gold
         self.dye2Gold = dye2Gold
+        print("setprice")
 
     def getDyePrice(self) -> tuple[int, int, int, int, int]:
         return (
@@ -66,6 +68,48 @@ class DistributedFairyShopkeeperNPCAI(DistributedFairyNPCAI):
         avId = self.air.getAvatarIdFromSender()
         itemsTriedOn = ShopTriedOnItems.unpackFromTuple((avId, items))
         self.sendUpdateToAvatarId(avId, "setTriedOnItems", [[itemsTriedOn]])
+    
+    def setRequestDyeItem(self, invId, color1, color2, type, unk2):
+        avId = self.air.getAvatarIdFromSender()
+        avatar = self.air.doId2do.get(avId)
+
+        price: int = 0
+
+        fields = {}
+        dyes = []
+
+        if color1 != -1:
+            fields["avatar.items.$.color1"] = color1
+            price += self.dye1Price
+            dyes.append(color1)
+        if color2 != -1:
+            fields["avatar.items.$.color2"] = color2
+            price += self.dye2Price
+            dyes.append(color2)
+
+        if not fields:
+            return False  # Nothing to update
+        
+        ing_type = self.dyeCostItemId
+        success = self.air.inventoryManager.removeIngredientsFromPouch(avId, ing_type, price)
+        avatar.d_syncPouchAfterChanges()
+
+        if success:
+            for d in dyes:
+                dye_id = d + 14000
+                self.air.inventoryManager.removeIngredientsFromPouch(avId, dye_id, 1)
+                avatar.d_syncPouchAfterChanges()
+
+            result = self.air.mongoInterface.mongodb.fairies.update_one(
+                {"_id": avId, "avatar.items.inv_id": invId},
+                {"$set": fields}
+            )
+
+            self.d_setPurchaseResponse(avId, result)
+        else:
+            # Send failure purchase response back to the client.
+            self.d_setPurchaseResponse(avId, success)
+
 
     def setRequestPurchase(self, items, usingGold) -> None:
         avId = self.air.getAvatarIdFromSender()
@@ -103,8 +147,14 @@ class DistributedFairyShopkeeperNPCAI(DistributedFairyNPCAI):
 
             priceTotal += requestPrice
 
-        # TODO: Support non gold item purchases
-        success = avatar.takeGold(priceTotal) if usingGold else False
+        if usingGold:
+            success = avatar.takeGold(priceTotal) 
+        else:
+            ing_type = shop.collectionsById.get(collectionId).currencyId
+            success = self.air.inventoryManager.removeIngredientsFromPouch(avId, ing_type, priceTotal)
+            avatar.d_syncPouchAfterChanges()
+            print(ing_type)
+            print(success)
 
         if not success:
             # Send failure purchase response back to the client.
@@ -120,6 +170,11 @@ class DistributedFairyShopkeeperNPCAI(DistributedFairyNPCAI):
 
     def handleSpecialPurchase(self, avId: int, avatar, item: ShopItem | OutfitItem, amount: int, collectionId: int) -> bool:
         if self.zoneId == 110010: # harmony's
+            self.purchasePouchItemsHelper(avId, item.itemId, amount)
+
+            return True
+
+        if self.zoneId == 112000: # Daisy's Dyes
             self.purchasePouchItemsHelper(avId, item.itemId, amount)
 
             return True

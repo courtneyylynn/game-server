@@ -90,6 +90,37 @@ class FairyInventoryMgrAI(DistributedObjectGlobalAI):
         )
 
         return result.modified_count > 0
+    
+    def removeIngredientsFromPouch(self, avId: int, itemID: int, itemCount: int) -> bool:
+        # First, read the current pouch entry
+        fairy = self.air.mongoInterface.mongodb.fairies.find_one(
+            {"_id": avId, "pouch.item_id": itemID},
+            {"pouch.$": 1}  # Only return the matching pouch element
+        )
+
+        if not fairy or not fairy.get("pouch"):
+            return False  # Item doesn't exist in pouch
+
+        currentAmount = fairy["pouch"][0]["amount"]
+
+        if currentAmount < itemCount:
+            return False  # Not enough
+
+        result = self.air.mongoInterface.mongodb.fairies.update_one(
+            {"_id": avId, "pouch.item_id": itemID},
+            {"$inc": {"pouch.$.amount": -itemCount}}
+        )
+
+        if result.modified_count == 0:
+            return False
+
+        # Clean up if amount hit 0
+        self.air.mongoInterface.mongodb.fairies.update_one(
+            {"_id": avId},
+            {"$pull": {"pouch": {"item_id": itemID, "amount": {"$lte": 0}}}}
+        )
+
+        return True
 
     def _nextPouchSlot(self, avId: int) -> int:
         usedSlots = {slot for _itemId, slot, _amount in self.getPouch(avId) if slot >= 0}
@@ -117,6 +148,6 @@ class FairyInventoryMgrAI(DistributedObjectGlobalAI):
             return True
 
         pouchSlot = self._getPouchSlotForItem(avId, itemID)
-        self.sendUpdateToAvatarId(avId, "putToStackAndNotify", [itemID, pouchSlot, itemCount])
-        avatar.d_syncPouchAfterIngredientGrant()
+        avatar.sendUpdate("setItemEvent", [itemID, 1, 0, 0])
+        avatar.d_syncPouchAfterChanges()
         return True

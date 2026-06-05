@@ -43,9 +43,9 @@ class TierDef:
 
 
 TIERS = {
-    "rare":     TierDef(max_qty=17, power=1.6, floor=0),
-    "uncommon": TierDef(max_qty=34, power=1.2, floor=0),
-    "common":   TierDef(max_qty=68, power=0.7, floor=1),
+    "rare":     TierDef(max_qty=55, power=1.6, floor=0),
+    "uncommon": TierDef(max_qty=110, power=1.2, floor=0),
+    "common":   TierDef(max_qty=220, power=0.7, floor=1),
 }
 
 # K is solved so that norm=1.0 (badge score) yields 75% of max_qty.

@@ -56,6 +56,7 @@ from typing import NamedTuple
 from direct.directnotify import DirectNotifyGlobal
 from game.fairies.ai import FairiesConstants as fc
 from game.fairies.ai import ZoneConstants as zc
+from game.fairies.gateway import GatewayConstants as gc
 
 notify = DirectNotifyGlobal.directNotify.newCategory("IngredientSpawnData")
 
@@ -182,7 +183,7 @@ def zone_map_bounds(zone_id: int) -> SpawnBounds:
 
 
 # =============================================================================
-# Exclusion Zones (TODO — not yet populated)
+# Exclusion Zones
 #
 # Rectangular keep-out areas where items must NOT spawn (signs, gateways, etc.).
 # Uses the same SpawnBounds shape as map bounds. Shared by all ingredients in a
@@ -196,44 +197,54 @@ SpawnExclusionZone = SpawnBounds
 def exclusion_rect(x_min: int, x_max: int, y_min: int, y_max: int) -> SpawnExclusionZone:
     return SpawnExclusionZone(x_min, x_max, y_min, y_max)
 
+DEFAULT_SIGN_WIDTH = 160 # averages for normal signs
+DEFAULT_SIGN_HEIGHT = 190
 
-def exclusion_rect_around(center_x: int, center_y: int, padding: int = 120) -> SpawnExclusionZone:
-    """Build a square keep-out rectangle centered on a point (e.g. a gateway)."""
+def exclusion_rect_around(
+    origin_x: int,
+    origin_y: int,
+    padding: int = 120,
+    sign_width: int = DEFAULT_SIGN_WIDTH,
+    sign_height: int = DEFAULT_SIGN_HEIGHT,
+) -> SpawnExclusionZone:
+    """Build a keep-out rectangle from the upper-left corner of a sign/gateway."""
+    half_w = sign_width // 2
+    half_h = sign_height // 2
+    center_x = origin_x + half_w
+    center_y = origin_y + half_h
     return SpawnExclusionZone(
-        center_x - padding,
-        center_x + padding,
-        center_y - padding,
-        center_y + padding,
+        center_x - half_w - padding,
+        center_x + half_w + padding,
+        center_y - half_h - padding,
+        center_y + half_h + padding,
     )
 
+def _build_gateway_exclusions(zone_id: int) -> tuple[SpawnExclusionZone, ...]:
+    """Derive keep-out rectangles from GatewayConstants.GATEWAYS[zone_id] positions."""
+    return tuple(
+        exclusion_rect_around(*gw["position"], *gw.get("sign_size", (DEFAULT_SIGN_WIDTH, DEFAULT_SIGN_HEIGHT)))
+        for gw in gc.GATEWAYS.get(zone_id, [])
+    )
 
-# TODO: populate with exclusion_rect(...) or exclusion_rect_around(gw_x, gw_y) per meadow.
 #       Gateway positions are in GatewayConstants.GATEWAYS[zone_id]["position"].
 ZONE_EXCLUSIONS: dict[int, tuple[SpawnExclusionZone, ...]] = {
-    zc.CHERRYBLOSSOM_HEIGHTS: (),
-    zc.SPRINGTIME_ORCHARD: (),
-    zc.DEWDROP_VALE: (),
-    zc.NEVERBERRY_THICKET: (),
-    zc.TREETOP_BEND: (),
-    zc.ACORN_SUMMIT: (),
-    zc.COTTONPUFF_FIELD: (),
-    zc.MAPLE_TREE_HILL: (),
-    zc.PUMPKIN_PATCH: (),
-    zc.EVERGREEN_OVERLOOK: (),
-    zc.SNOWCAP_GLADE: (),
-    zc.CHILLY_FALLS: (),
-    zc.PALM_TREE_COVE: (),
-    zc.SUNFLOWER_GULLY: (),
-    zc.NEVERFRUIT_GROVE: (),
-    zc.HAVENDISH_SQUARE: (),
+    zc.CHERRYBLOSSOM_HEIGHTS: _build_gateway_exclusions(zc.CHERRYBLOSSOM_HEIGHTS),
+    zc.SPRINGTIME_ORCHARD: _build_gateway_exclusions(zc.SPRINGTIME_ORCHARD),
+    zc.DEWDROP_VALE: _build_gateway_exclusions(zc.DEWDROP_VALE),
+    zc.NEVERBERRY_THICKET: _build_gateway_exclusions(zc.NEVERBERRY_THICKET),
+    zc.TREETOP_BEND: _build_gateway_exclusions(zc.TREETOP_BEND),
+    zc.ACORN_SUMMIT: _build_gateway_exclusions(zc.ACORN_SUMMIT),
+    zc.COTTONPUFF_FIELD: _build_gateway_exclusions(zc.COTTONPUFF_FIELD),
+    zc.MAPLE_TREE_HILL: _build_gateway_exclusions(zc.MAPLE_TREE_HILL),
+    zc.PUMPKIN_PATCH: _build_gateway_exclusions(zc.PUMPKIN_PATCH),
+    zc.EVERGREEN_OVERLOOK: _build_gateway_exclusions(zc.EVERGREEN_OVERLOOK),
+    zc.SNOWCAP_GLADE: _build_gateway_exclusions(zc.SNOWCAP_GLADE),
+    zc.CHILLY_FALLS: _build_gateway_exclusions(zc.CHILLY_FALLS),
+    zc.PALM_TREE_COVE: _build_gateway_exclusions(zc.PALM_TREE_COVE),
+    zc.SUNFLOWER_GULLY: _build_gateway_exclusions(zc.SUNFLOWER_GULLY),
+    zc.NEVERFRUIT_GROVE: _build_gateway_exclusions(zc.NEVERFRUIT_GROVE),
+    zc.HAVENDISH_SQUARE: _build_gateway_exclusions(zc.HAVENDISH_SQUARE),
 }
-
-
-# TODO: implement when exclusion zones are ready — auto-build rects from gateway positions:
-# def _build_gateway_exclusions(zone_id: int) -> tuple[SpawnExclusionZone, ...]:
-#     """Derive keep-out rectangles from GatewayConstants.GATEWAYS[zone_id] positions."""
-#     ...
-
 
 # =============================================================================
 # Ingredient Definitions
