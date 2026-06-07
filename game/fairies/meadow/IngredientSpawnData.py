@@ -224,7 +224,12 @@ def _build_gateway_exclusions(zone_id: int) -> tuple[SpawnExclusionZone, ...]:
     return tuple(
         exclusion_rect_around(*gw["position"], *gw.get("sign_size", (DEFAULT_SIGN_WIDTH, DEFAULT_SIGN_HEIGHT)))
         for gw in gc.GATEWAYS.get(zone_id, [])
+        if gw["name"] not in _MANUAL_EXCLUSION_GATEWAY_NAMES
     )
+
+
+# Gateway names with hand-tuned rects below (skip auto keep-out for those signs).
+_MANUAL_EXCLUSION_GATEWAY_NAMES = frozenset({"9278"})
 
 #       Gateway positions are in GatewayConstants.GATEWAYS[zone_id]["position"].
 ZONE_EXCLUSIONS: dict[int, tuple[SpawnExclusionZone, ...]] = {
@@ -242,7 +247,10 @@ ZONE_EXCLUSIONS: dict[int, tuple[SpawnExclusionZone, ...]] = {
     zc.CHILLY_FALLS: _build_gateway_exclusions(zc.CHILLY_FALLS),
     zc.PALM_TREE_COVE: _build_gateway_exclusions(zc.PALM_TREE_COVE),
     zc.SUNFLOWER_GULLY: _build_gateway_exclusions(zc.SUNFLOWER_GULLY),
-    zc.NEVERFRUIT_GROVE: _build_gateway_exclusions(zc.NEVERFRUIT_GROVE),
+    zc.NEVERFRUIT_GROVE: (
+        # Pixie Post Office (gateway 9278) — anchor (337,140) != clickable footprint
+        exclusion_rect(20, 870, 5, 530),
+    ) + _build_gateway_exclusions(zc.NEVERFRUIT_GROVE),
     zc.HAVENDISH_SQUARE: _build_gateway_exclusions(zc.HAVENDISH_SQUARE),
 }
 
