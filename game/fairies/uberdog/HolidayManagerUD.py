@@ -12,7 +12,8 @@ class HolidayManagerUD(DistributedObjectUD):
             "Meadow_Camp2013",
             "Meadow_Decorations_SummmerSplash",
             "Meadow_SummerSplash",
-            "Meadow_CampPixie2012"
+            "Meadow_CampPixie2012",
+            "Emote_Camp"
         ]
 
     def getTimeSpanMessage(self) -> str:
