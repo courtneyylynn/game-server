@@ -17,7 +17,7 @@ class GameDef:
 
 GAMES = {
     g.id: g for g in [
-        GameDef(2,  "Bubble Bounce",     15000,  (fc.LILY_PETALS, fc.ROSE_PETALS, fc.SPIDER_SILK)),
+        GameDef(2,  "Bubble Bounce",     15000,  (fc.LILY_PETALS, fc.DAISY_PETALS, fc.SPIDER_SILK)),
         GameDef(45, "Butterfly Painter", 50000,  (fc.LILY_PETALS, fc.BLUEBERRIES, fc.SUNFLOWER_SEEDS)),
         GameDef(10, "Fairy Fireworks",   50000,  (fc.OAK_LEAVES, fc.MAPLE_LEAVES, fc.DANDELION_FLUFF)),
         GameDef(1,  "Firefly Light-Up",  40000,  (fc.IVY, fc.MEADOW_GRASS, fc.SUNFLOWER_SEEDS)),

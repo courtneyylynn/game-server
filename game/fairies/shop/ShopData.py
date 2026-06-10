@@ -2679,7 +2679,7 @@ SHOPS = [
                     ShopItem(itemId=14176, price=5, goldPrice=1), # Silvermist Blue
                     ShopItem(itemId=14180, price=5, goldPrice=1), # Seashell Blue
                     ShopItem(itemId=14207, price=5, goldPrice=1), # Diamond Blue
-                    ShopItem(itemId=14029, price=5, goldPrice=1), # Deep Sea Blue
+                    ShopItem(itemId=14209, price=5, goldPrice=1), # Deep Sea Blue
                     ShopItem(itemId=14213, price=5, goldPrice=1), # Cobalt Blue
                     ShopItem(itemId=14223, price=5, goldPrice=1), # Teal Blue
                     ShopItem(itemId=14266, price=5, goldPrice=1), # Ocean Blue

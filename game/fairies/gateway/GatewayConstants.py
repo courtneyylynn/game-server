@@ -943,7 +943,7 @@ GATEWAYS: dict[int, list[dict]] = {
             "position": (100, 1190),
             "targetLocationName": "",
             "targetZoneID": ZoneConstants.BUBBLE_BOUNCE_GAME,
-            "rewardList": [fc.LILY_PETALS, fc.ROSE_PETALS, fc.SPIDER_SILK],
+            "rewardList": [fc.LILY_PETALS, fc.DAISY_PETALS, fc.SPIDER_SILK],
         },
         {
             # Palm Tree Cove (southwest)
