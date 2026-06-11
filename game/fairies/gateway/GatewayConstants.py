@@ -93,6 +93,13 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetLocationName": "fromBeck'sAnimalNursery",
             "targetZoneID": ZoneConstants.SPRINGTIME_ORCHARD,
         },
+        {
+            # Lizzy's House
+            "name": "9176",
+            "position": (1430, 420),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.LIZZYS_HOUSE,
+        }
     ],
     ZoneConstants.QUEENS_BOUTIQUE: [
         {
@@ -228,6 +235,13 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetLocationName": "fromEvergreenOverlook",
             "targetZoneID": ZoneConstants.HAVENDISH_SQUARE,
         },
+        {
+            # Frosted Forest
+            "name": "9291",
+            "position": (720,320),
+            "targetLocationName": "fromEvergreenOverlook",
+            "targetZoneID": ZoneConstants.FROSTED_FOREST,
+        },
     ],
     ZoneConstants.CHILLY_FALLS: [
         {
@@ -258,6 +272,13 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetLocationName": "",
             "targetZoneID": ZoneConstants.GEM_JUGGLE_GAME,
             "rewardList": [fc.IVY, fc.PINE_NEEDLES, fc.TWIGS],
+        },
+        {
+            # Ice Palace
+            "name": "9117",
+            "position": (950, 170),
+            "targetLocationName": "fromChillyFalls",
+            "targetZoneID": ZoneConstants.ICE_PALACE,
         },
     ],
     ZoneConstants.GALES_OUTFITTERS: [
@@ -391,6 +412,14 @@ GATEWAYS: dict[int, list[dict]] = {
             "position": (1605, 233),
             "targetLocationName": "fromZone400",
             "targetZoneID": ZoneConstants.DEWDROP_VALE,
+
+        },
+        {
+            # Mermaid Grotto
+            "name": "9247",
+            "position": (1250, 770),
+            "targetLocationName": "fromZone400",
+            "targetZoneID": ZoneConstants.MERMAID_GROTTO,
 
         },
     ],
