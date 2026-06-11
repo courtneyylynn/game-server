@@ -58,11 +58,10 @@ class FairyInventoryMgrAI(DistributedObjectGlobalAI):
                     "avatar.items.$[item].howAcquired": 0
                 }
             },
-            array_filters=[{"item.inv_id": inv_id}]      
+            array_filters=[{"item.inv_id": inv_id}]
         )
 
         avatar.takeGold(CONV_COSTS[item_type])
-
 
     def addIngredientsToPouch(self, avId: int, itemID: int, itemCount: int, slot: int) -> bool:
         result = self.air.mongoInterface.mongodb.fairies.update_one(
@@ -90,7 +89,7 @@ class FairyInventoryMgrAI(DistributedObjectGlobalAI):
         )
 
         return result.modified_count > 0
-    
+
     def removeIngredientsFromPouch(self, avId: int, itemID: int, itemCount: int) -> bool:
         # First, read the current pouch entry
         fairy = self.air.mongoInterface.mongodb.fairies.find_one(

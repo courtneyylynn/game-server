@@ -355,6 +355,13 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
     def setLevel(self, level: int) -> None:
         self.level = level
 
+    def d_setLevel(sef, level: int) -> None:
+        self.sendUpdate("setLevel", [level])
+
+    def b_setLevel(self, level: int) -> None:
+        self.setLevel(level)
+        sef.d_setLevel(level)
+
     def getLevel(self) -> int:
         return self.level
 

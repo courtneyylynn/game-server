@@ -34,6 +34,13 @@ class DistributedFairyBaseAI(DistributedObjectAI):
     def setName(self, name: str) -> None:
         self.name = name
 
+    def d_setName(self, name: str) -> None:
+        self.sendUpdate("setName", [name])
+
+    def b_setName(self, name: str) -> None:
+        self.setName(name)
+        self.d_setName(name)
+
     def getName(self) -> str:
         return self.name
 
