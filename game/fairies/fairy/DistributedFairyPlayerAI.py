@@ -360,7 +360,7 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
 
     def b_setLevel(self, level: int) -> None:
         self.setLevel(level)
-        sef.d_setLevel(level)
+        self.d_setLevel(level)
 
     def getLevel(self) -> int:
         return self.level
