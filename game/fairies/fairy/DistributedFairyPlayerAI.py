@@ -51,7 +51,7 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
 
         self.sendUpdateToAvatarId(self.doId, "setDailyGoldTradeCap", [1000])
 
-        glblpurchase = MiscItem.unpackFromTuple((90003, 8006, 500, 200, 1))
+        glblpurchase = MiscItem.unpackFromTuple((90003, 8006, 500, 200, 200))
         self.sendUpdateToAvatarId(self.doId, "setGlobalPurchaseData", [[glblpurchase]])
 
     def delete(self):
