@@ -45,11 +45,6 @@ class DistributedCraftingMinigameAI(DistributedInstanceBaseAI):
         avId = self.air.getAvatarIdFromSender()
         avatar = self.air.doId2do.get(avId)
 
-        # TODO: TINKERING NOT IMPLEMENTED - BAIL EARLY BAIL QUICK
-        if get_item_type(recipeId) in ("Furniture", "Lamp", "Decoration"):
-            print("BAILING FOR TINKERING")
-            return 
-
         recipes = recipe_parser.parse_recipes(DEFAULT_XML, recipeId)
         if not recipes:
             print("something broke - fix it or else you dummy dumbo dimwit")
@@ -90,37 +85,116 @@ class DistributedCraftingMinigameAI(DistributedInstanceBaseAI):
             avatar.d_setPouch(self.air.inventoryManager.getPouch(avId))
 
     def _giveCraftedItem(self, avId, avatar, recipeId, quality, color1, color2):
-        invId = self.air.mongoInterface.getNextDoId()
+        
+        if get_item_type(recipeId) in ("Furniture", "Lamp", "Decoration"):
+            self._grant_home(avId, avatar, recipeId, quality, color1, color2)
+        else:
+            self._grant_wardrobe(avId, avatar, recipeId, quality, color1, color2)
+
+
+    def _grant_wardrobe(self, avId, avatar, recipeId, quality, color1, color2) -> bool:
+        inv_id = self.air.mongoInterface.getNextDoId()
         itemType = get_item_type(recipeId)
+        how_acquired = 11
 
-
-        self.air.mongoInterface.mongodb.fairies.update_one(
+        result = self.air.mongoInterface.mongodb.fairies.update_one(
             {"_id": avId},
             {
                 "$push": {
                     "avatar.items": {
-                        "inv_id": invId,
-                        "type": itemType,  
+                        "inv_id": inv_id,
+                        "type": itemType,
                         "item_id": recipeId,
                         "slot": -1,
                         "createdById": avId,
                         "createdByName": avatar.getName(),
-                        "giftedById": 0,  # TODO
-                        "giftedByName": "",  # TODO
+                        "giftedById": 0,
+                        "giftedByName": "",
                         "quality": quality,
                         "color1": color1,
                         "color2": color2,
-                        "howAcquired": 11,  # howAcquired > 10 takes up a wardrobe spot
-                        "location": "Wardrobe"
+                        "howAcquired": how_acquired,
+                        "location": "Wardrobe",
                     }
                 }
-            }
+            },
         )
 
-        self.air.inventoryManager.sendUpdateToAvatarId(avId, "wardrobeItem", [
+        if result.modified_count == 0:
+            return False
+
+        self.air.inventoryManager.sendUpdateToAvatarId(
+            avId,
+            "wardrobeItem",
+            [
+                recipeId,
+                [
+                    inv_id,
+                    recipeId,
+                    -1,
+                    avId,
+                    avatar.getName(),
+                    0,
+                    "",
+                    quality,
+                    color1,
+                    color2,
+                    how_acquired,
+                ],
+            ],
+        )
+        return True
+
+
+    def _grant_home(self, avId, avatar, recipeId, quality, color1, color2) -> bool:
+        inv_id = self.air.mongoInterface.getNextDoId()
+        itemType = get_item_type(recipeId)
+        how_acquired = 11
+
+        inv_item_ext = [
+            inv_id,
             recipeId,
-            [invId, recipeId, -1, avId, avatar.getName(), 0, "", quality, color1, color2, 11
-        ]])
+            -1,
+            avId,
+            avatar.getName(),
+            0,
+            "",
+            quality,
+            color1,
+            color2,
+            how_acquired,
+        ]
+
+        result = self.air.mongoInterface.mongodb.fairies.update_one(
+            {"_id": avId},
+            {
+                "$push": {
+                    "avatar.items": {
+                        "inv_id": inv_id,
+                        "type": itemType,
+                        "item_id": recipeId,
+                        "slot": -1,
+                        "createdById": avId,
+                        "createdByName": avatar.getName(),
+                        "giftedById": 0,
+                        "giftedByName": "",
+                        "quality": quality,
+                        "color1": color1,
+                        "color2": color2,
+                        "howAcquired": how_acquired,
+                        "location": "Storage",
+                    }
+                }
+            },
+        )
+
+        if result.modified_count == 0:
+            return False
+
+        self.air.inventoryManager.sendUpdateToAvatarId(
+            avId, "storageItem", [recipeId, inv_item_ext]
+        )
+        return True
 
     def setEmbellishResults(self):
         # Seems to be empty function in Client
