@@ -142,7 +142,7 @@ struct GlobalPurchaseItem {
 struct MiscItem {
     int32 itemId;
     int32 ingredId;
-    int32 ingredPrice;
+    int16 ingredPrice;
     int16 goldPrice;
     int16 memberGoldPrice;
 };
@@ -674,11 +674,11 @@ dclass DistributedFairyPlayer : DistributedFairyBase { // 80
     requestUpdateSavedOutfit(uint64, uint64, uint64, uint64, uint64, uint64, uint64, uint64, uint64); // 577
     requestRemoveSavedOutfits(LongType[]); // 578
     requestSendSavedOutfitSlotPurchaseRequest() ownsend airecv; // 579
-    requestGlobalPurchase(GlobalPurchaseItem[]); // 580
+    requestGlobalPurchase(GlobalPurchaseItem[]) ownsend airecv; // 580
     requestGlobablPurchaseData(); // 581
-    setGlobalPurchaseData(MiscItem[]); // 582
-    setGlobalPurchase(uint16); // 583
-    requestSendUpdateFairyName(string); // 584
+    setGlobalPurchaseData(MiscItem[]) ownrecv; // 582
+    setGlobalPurchase(uint16) ownrecv; // 583
+    requestSendUpdateFairyName(string) ownsend airecv; // 584
 };
 
 dclass DistributedFairyGM : DistributedFairyPlayer { // 81
