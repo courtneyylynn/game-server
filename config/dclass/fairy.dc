@@ -642,7 +642,7 @@ dclass DistributedFairyPlayer : DistributedFairyBase { // 80
     setNametag(int8) ownrequired broadcast db ownrecv; // 545
     setHomeType(int32, int8) ownrequired broadcast db ownrecv; // 546
     setDailyChancePlayed(uint8) ownrequired broadcast db ownrecv; // 547
-    requestDailyChance(uint32); // 548
+    requestDailyChance(uint32) ownsend airecv; // 548
     setDailyChanceReward(RewardExt[]); // 549
     gardenState(GardenState[]); // 550
     giftGiven(int8, RewardExt); // 551

@@ -1,4 +1,5 @@
 from game.fairies.instance.DistributedInstanceBaseAI import DistributedInstanceBaseAI
+from game.fairies.minigame.MinigameConstants import MINIGAME_DAILY_CHANCE
 from game.fairies.minigame.MinigameRewards import calc_rewards
 
 class DistributedTalentMinigameAI(DistributedInstanceBaseAI):
@@ -16,10 +17,16 @@ class DistributedTalentMinigameAI(DistributedInstanceBaseAI):
         return self.gameID
 
     def reportScore(self, score: int) -> None:
+        if self.gameID == MINIGAME_DAILY_CHANCE:
+            return
         self.totalScore += score
         print("reportScore", score, self.totalScore)
 
     def endGame(self, unknown: int) -> None:
+        if self.gameID == MINIGAME_DAILY_CHANCE:
+            # Daily Spin uses DistributedFairyPlayer.requestDailyChance, not minigame rewards.
+            return
+
         print("endGame", unknown)
 
         avatarId = self.air.getAvatarIdFromSender()

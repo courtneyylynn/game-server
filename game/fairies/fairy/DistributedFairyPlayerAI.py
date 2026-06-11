@@ -1,9 +1,28 @@
+from direct.directnotify import DirectNotifyGlobal
+
 from game.otp.otpbase import OTPGlobals
 
 from .DistributedFairyBaseAI import DistributedFairyBaseAI
 from game.fairies.ai.BakingAssets import BAKED_ITEMS
 from game.fairies.fairy.AuraMapping import AURA_MAPPING, SKIN_COLOR_MAPPING, WING_COLOR_MAPPING
 from game.fairies.fairy.structs.MiscItem import MiscItem
+
+from game.fairies.daily.DailyChanceData import (
+    DEV_TEST_PRIZE,
+    owned_spin_badge_exclude_mask,
+    roll_rewards,
+)
+from game.fairies.daily.DailyChanceEligibility import (
+    can_spin_today,
+    current_spin_day,
+    played_flag_for_client,
+)
+from game.fairies.daily.DailyChanceGrant import get_earned_spin_badge_ids, grant_prize
+
+notify = DirectNotifyGlobal.directNotify.newCategory("DistributedFairyPlayerAI")
+
+DAILY_CHANCE_GRANTS_ENABLED = True
+DAILY_CHANCE_ONCE_PER_DAY_ENABLED = True
 
 class DistributedFairyPlayerAI(DistributedFairyBaseAI):
     def __init__(self, air) -> None:
@@ -14,14 +33,17 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
         self.gold: int = 0
         self.access: int = 0
         self.level: int = 0
+        self.dailyChancePlayed: int = 0
+        self.dailyChanceLastSpinDay: int = 0
 
         self._originalDNA = {}
 
     def announceGenerate(self):
         self.air.incrementPopulation()
 
-        # Fill in the missing information from the database (i.e. gold)
         self.air.fillInFairyPlayer(self)
+        if not DAILY_CHANCE_ONCE_PER_DAY_ENABLED:
+            self._sync_daily_chance_not_played_for_client()
 
         self.air.inventoryManager.avatarOnline(self.doId)
         self.sendUpdateToAvatarId(self.doId, "setDailyGoldTradeCap", [1000])
@@ -61,6 +83,89 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
 
     def isPaid(self) -> bool:
         return self.getAccess() == OTPGlobals.AccessFull
+
+    def setDailyChancePlayed(self, played: int) -> None:
+        self.dailyChancePlayed = played
+
+    def getDailyChancePlayed(self) -> int:
+        return self.dailyChancePlayed
+
+    def d_setDailyChancePlayed(self, played: int) -> None:
+        self.sendUpdate("setDailyChancePlayed", [played])
+
+    def setDailyChanceLastSpinDay(self, spin_day: int) -> None:
+        self.dailyChanceLastSpinDay = int(spin_day)
+        if DAILY_CHANCE_ONCE_PER_DAY_ENABLED:
+            self._sync_daily_chance_played_from_spin_day()
+
+    def getDailyChanceLastSpinDay(self) -> int:
+        return self.dailyChanceLastSpinDay
+
+    def _sync_daily_chance_played_from_spin_day(self) -> None:
+        played = played_flag_for_client(self.getDailyChanceLastSpinDay())
+        self.setDailyChancePlayed(played)
+        self.d_setDailyChancePlayed(played)
+
+    def _record_daily_chance_spin(self) -> None:
+        if not DAILY_CHANCE_ONCE_PER_DAY_ENABLED:
+            return
+
+        spin_day = current_spin_day()
+        self.setDailyChanceLastSpinDay(spin_day)
+        self.air.mongoInterface.updateField(
+            "fairies", "dailyChanceLastSpinDay", self.doId, spin_day
+        )
+
+    def _sync_daily_chance_not_played_for_client(self) -> None:
+        self.setDailyChancePlayed(0)
+        self.d_setDailyChancePlayed(0)
+
+    def requestDailyChance(self, excludeMask: int) -> None:
+        avId = self.air.getAvatarIdFromSender()
+        if avId != self.doId:
+            self.notify.warning(
+                f"requestDailyChance from {avId} but sender DO is {self.doId}"
+            )
+            return
+
+        if DAILY_CHANCE_ONCE_PER_DAY_ENABLED and not can_spin_today(
+            self.getDailyChanceLastSpinDay()
+        ):
+            self._sync_daily_chance_played_from_spin_day()
+            self.sendUpdateToAvatarId(avId, "setDailyChanceReward", [[]])
+            return
+
+        if not DAILY_CHANCE_GRANTS_ENABLED:
+            self.sendUpdateToAvatarId(avId, "setDailyChanceReward", [[]])
+            return
+
+        avatar_gender = self.fairyDNA.gender
+        earned_spin_badges = get_earned_spin_badge_ids(self.air, avId)
+        effective_mask = excludeMask | owned_spin_badge_exclude_mask(earned_spin_badges)
+        prizes = roll_rewards(effective_mask, self.isPaid(), avatar_gender)
+        if not prizes:
+            prizes = [DEV_TEST_PRIZE]
+
+        granted: list[tuple[int, int, int, int]] = []
+        for prize in prizes:
+            if grant_prize(self.air, avId, self, prize):
+                granted.append(prize.as_reward_ext())
+            else:
+                self.notify.warning(
+                    f"requestDailyChance: failed to grant item {prize.item_id} to {avId}"
+                )
+
+        if not granted and prizes:
+            self.notify.warning(
+                f"requestDailyChance: no grants applied for {avId}, "
+                f"prizes={[p.item_id for p in prizes]}"
+            )
+
+        self.sendUpdateToAvatarId(avId, "setDailyChanceReward", [granted])
+        if granted and DAILY_CHANCE_ONCE_PER_DAY_ENABLED:
+            self._record_daily_chance_spin()
+        elif not DAILY_CHANCE_ONCE_PER_DAY_ENABLED:
+            self._sync_daily_chance_not_played_for_client()
 
     def requestDailyGoldTradeCapData(self) -> None:
         # TODO
