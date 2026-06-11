@@ -744,218 +744,218 @@ SHOPS = [
             collectionId=79, # Floral Collections
             currencyId=FairiesConstants.PINE_NEEDLES,
             items=[
-                ShopItem(itemId=2140, price=10, goldPrice=3, color1=10, color2=30, itemType="HeadItem"), # Cantaloupe Orange Citrus Barrette
-                ShopItem(itemId=158, price=17, goldPrice=5, color1=10, color2=30, itemType="Shirt"), # Cantaloupe Orange Citrus Layer Top
-                ShopItem(itemId=1144, price=17, goldPrice=5, color1=10, color2=30, itemType="Skirt"), # Cantaloupe Orange Citrus Peel Wrap
-                ShopItem(itemId=3603, price=10, goldPrice=3, color1=30, color2=10, itemType="Shoes"), # Pumpkin Orange Citrus Peel Heels
+                ShopItem(itemId=2140, price=25, goldPrice=10, color1=10, color2=30, itemType="HeadItem"), # Cantaloupe Orange Citrus Barrette
+                ShopItem(itemId=158, price=45, goldPrice=5, color1=10, color2=30, itemType="Shirt"), # Cantaloupe Orange Citrus Layer Top
+                ShopItem(itemId=1144, price=45, goldPrice=5, color1=10, color2=30, itemType="Skirt"), # Cantaloupe Orange Citrus Peel Wrap
+                ShopItem(itemId=3603, price=25, goldPrice=10, color1=30, color2=10, itemType="Shoes"), # Pumpkin Orange Citrus Peel Heels
 
-                ShopItem(itemId=2139, price=10, goldPrice=3, color1=18, color2=27, itemType="HeadItem"), # Waterfall Blue Strawberry Barrette with Yellow Trim
-                ShopItem(itemId=159, price=17, goldPrice=5, color1=45, color2=45, itemType="Shirt"), # Strawberry Red Strawberry Top
-                ShopItem(itemId=569, price=3, goldPrice=1, color1=139, color2=18, itemType="Belt"), # Seedling Green Strawberry Sash with Waterfall Blue Trim
-                ShopItem(itemId=1142, price=17, goldPrice=5, color1=45, color2=45, itemType="Skirt"), # Strawberry Red Strawberry Skirt
-                ShopItem(itemId=3602, price=10, goldPrice=3, color1=139, color2=45, itemType="Shoes"), # Seedling Green Strawberry Low Heels with Strawberry Red Trim
+                ShopItem(itemId=2139, price=25, goldPrice=10, color1=18, color2=27, itemType="HeadItem"), # Waterfall Blue Strawberry Barrette with Yellow Trim
+                ShopItem(itemId=159, price=45, goldPrice=5, color1=45, color2=45, itemType="Shirt"), # Strawberry Red Strawberry Top
+                ShopItem(itemId=569, price=15, goldPrice=1, color1=139, color2=18, itemType="Belt"), # Seedling Green Strawberry Sash with Waterfall Blue Trim
+                ShopItem(itemId=1142, price=45, goldPrice=5, color1=45, color2=45, itemType="Skirt"), # Strawberry Red Strawberry Skirt
+                ShopItem(itemId=3602, price=25, goldPrice=10, color1=139, color2=45, itemType="Shoes"), # Seedling Green Strawberry Low Heels with Strawberry Red Trim
 
-                ShopItem(itemId=2058, price=10, goldPrice=3, color1=17, color2=0, itemType="HeadItem"), # Tendershoot Green Clover Headband
-                ShopItem(itemId=59, price=17, goldPrice=5, color1=2, color2=17, itemType="Shirt"), # Clover Green Clover Top with Tendershoot Green Trim
-                ShopItem(itemId=1064, price=17, goldPrice=5, color1=2, color2=17, itemType="Skirt"), # Clover Green Clover Skirt with Tendershoot Green Trim
-                ShopItem(itemId=3546, price=10, goldPrice=3, color1=2, color2=17, itemType="Shoes"), # Clover Green Clover Slippers with Tendershoot Green Trim
+                ShopItem(itemId=2058, price=25, goldPrice=10, color1=17, color2=0, itemType="HeadItem"), # Tendershoot Green Clover Headband
+                ShopItem(itemId=59, price=45, goldPrice=5, color1=2, color2=17, itemType="Shirt"), # Clover Green Clover Top with Tendershoot Green Trim
+                ShopItem(itemId=1064, price=45, goldPrice=5, color1=2, color2=17, itemType="Skirt"), # Clover Green Clover Skirt with Tendershoot Green Trim
+                ShopItem(itemId=3546, price=25, goldPrice=10, color1=2, color2=17, itemType="Shoes"), # Clover Green Clover Slippers with Tendershoot Green Trim
 
-                ShopItem(itemId=2067, price=10, goldPrice=3, color1=195, color2=209, itemType="HeadItem"), # Electric Blue Helenium Headband with Deep Sea Blue Trim
-                ShopItem(itemId=68, price=17, goldPrice=5, color1=209, color2=195, itemType="Shirt"), # Deep Sea Blue Helenium Top
-                ShopItem(itemId=1073, price=17, goldPrice=5, color1=209, color2=195, itemType="Skirt"), # Deep Sea Blue Helenium Skirt
-                ShopItem(itemId=3555, price=10, goldPrice=3, color1=209, color2=195, itemType="Shoes"), # Deep Sea Blue Helenium Boots
+                ShopItem(itemId=2067, price=25, goldPrice=10, color1=195, color2=209, itemType="HeadItem"), # Electric Blue Helenium Headband with Deep Sea Blue Trim
+                ShopItem(itemId=68, price=45, goldPrice=5, color1=209, color2=195, itemType="Shirt"), # Deep Sea Blue Helenium Top
+                ShopItem(itemId=1073, price=45, goldPrice=5, color1=209, color2=195, itemType="Skirt"), # Deep Sea Blue Helenium Skirt
+                ShopItem(itemId=3555, price=25, goldPrice=10, color1=209, color2=195, itemType="Shoes"), # Deep Sea Blue Helenium Boots
 
-                ShopItem(itemId=155, price=17, goldPrice=5, color1=152, color2=129, itemType="Shirt"), # Pale Purple Plumeria Top with Dark Purple Trim
-                ShopItem(itemId=568, price=3, goldPrice=1, color1=69, color2=69, itemType="Belt"), # Powder Blue Plumeria Garland
-                ShopItem(itemId=1140, price=17, goldPrice=5, color1=152, color2=129, itemType="Skirt"), # Pale Purple Plumeria Sarong with Dark Purple Trim
-                ShopItem(itemId=3608, price=10, goldPrice=3, color1=69, color2=69, itemType="Shoes"), # Powder Blue Strappy Sandal
+                ShopItem(itemId=155, price=45, goldPrice=5, color1=152, color2=129, itemType="Shirt"), # Pale Purple Plumeria Top with Dark Purple Trim
+                ShopItem(itemId=568, price=15, goldPrice=1, color1=69, color2=69, itemType="Belt"), # Powder Blue Plumeria Garland
+                ShopItem(itemId=1140, price=45, goldPrice=5, color1=152, color2=129, itemType="Skirt"), # Pale Purple Plumeria Sarong with Dark Purple Trim
+                ShopItem(itemId=3608, price=25, goldPrice=10, color1=69, color2=69, itemType="Shoes"), # Powder Blue Strappy Sandal
 
-                ShopItem(itemId=2047, price=10, goldPrice=3, color1=265, color2=258, itemType="HeadItem"), # Bright Sky Blue Lantana Headband
-                ShopItem(itemId=48, price=17, goldPrice=5, color1=265, color2=258, itemType="Shirt"), # Bright Sky Blue Lantana Top
-                ShopItem(itemId=1053, price=17, goldPrice=5, color1=265, color2=258, itemType="Skirt"), # Bright Sky Blue Lantana Skirt
-                ShopItem(itemId=3535, price=10, goldPrice=3, color1=258, color2=258, itemType="Shoes"), # Spearmint Green Lantana Slippers
+                ShopItem(itemId=2047, price=25, goldPrice=3, color1=265, color2=258, itemType="HeadItem"), # Bright Sky Blue Lantana Headband
+                ShopItem(itemId=48, price=45, goldPrice=5, color1=265, color2=258, itemType="Shirt"), # Bright Sky Blue Lantana Top
+                ShopItem(itemId=1053, price=45, goldPrice=5, color1=265, color2=258, itemType="Skirt"), # Bright Sky Blue Lantana Skirt
+                ShopItem(itemId=3535, price=25, goldPrice=10, color1=258, color2=258, itemType="Shoes"), # Spearmint Green Lantana Slippers
 
-                ShopItem(itemId=2057, price=10, goldPrice=3, color1=230, color2=121, itemType="HeadItem"), # Scarlet Red Ginkgo Headband
-                ShopItem(itemId=58, price=17, goldPrice=5, color1=230, color2=121, itemType="Shirt"), # Scarlet Red Ginkgo Top
-                ShopItem(itemId=1063, price=17, goldPrice=5, color1=230, color2=121, itemType="Skirt"), # Scarlet Red Ginkgo Skirt
-                ShopItem(itemId=3545, price=10, goldPrice=3, color1=121, color2=121, itemType="Shoes"), # Daisy Pink Ginkgo Slippers 
+                ShopItem(itemId=2057, price=25, goldPrice=10, color1=230, color2=121, itemType="HeadItem"), # Scarlet Red Ginkgo Headband
+                ShopItem(itemId=58, price=45, goldPrice=5, color1=230, color2=121, itemType="Shirt"), # Scarlet Red Ginkgo Top
+                ShopItem(itemId=1063, price=45, goldPrice=5, color1=230, color2=121, itemType="Skirt"), # Scarlet Red Ginkgo Skirt
+                ShopItem(itemId=3545, price=25, goldPrice=10, color1=121, color2=121, itemType="Shoes"), # Daisy Pink Ginkgo Slippers 
 
-                ShopItem(itemId=2060, price=10, goldPrice=3, color1=152, color2=73, itemType="HeadItem"), # Pale Purple Lemon Balm Headband with Grape Purple Trim
-                ShopItem(itemId=61, price=17, goldPrice=5, color1=152, color2=73, itemType="Shirt"), # Pale Purple Lemon Balm Top with Grape Purple Trim
-                ShopItem(itemId=1066, price=17, goldPrice=5, color1=73, color2=152, itemType="Skirt"), # Grape Purple Lemon Balm Skirt
-                ShopItem(itemId=3548, price=10, goldPrice=3, color1=73, color2=152, itemType="Shoes"), # Grape Purple Lemon Balm Boots
+                ShopItem(itemId=2060, price=25, goldPrice=10, color1=152, color2=73, itemType="HeadItem"), # Pale Purple Lemon Balm Headband with Grape Purple Trim
+                ShopItem(itemId=61, price=45, goldPrice=5, color1=152, color2=73, itemType="Shirt"), # Pale Purple Lemon Balm Top with Grape Purple Trim
+                ShopItem(itemId=1066, price=45, goldPrice=5, color1=73, color2=152, itemType="Skirt"), # Grape Purple Lemon Balm Skirt
+                ShopItem(itemId=3548, price=25, goldPrice=10, color1=73, color2=152, itemType="Shoes"), # Grape Purple Lemon Balm Boots
 
-                ShopItem(itemId=2052, price=10, goldPrice=3, color1=226, color2=208, itemType="HeadItem"), # Goldenrod Yellow Saffron Headband
-                ShopItem(itemId=53, price=17, goldPrice=5, color1=208, color2=208, itemType="Shirt"), # Cerulean Blue Saffron Top
-                ShopItem(itemId=1058, price=17, goldPrice=5, color1=208, color2=208, itemType="Skirt"), # Cerulean Blue Saffron Skirt
-                ShopItem(itemId=3540, price=10, goldPrice=3, color1=226, color2=226, itemType="Shoes"), # Goldenrod Yellow Saffron Slippers
+                ShopItem(itemId=2052, price=25, goldPrice=10, color1=226, color2=208, itemType="HeadItem"), # Goldenrod Yellow Saffron Headband
+                ShopItem(itemId=53, price=45, goldPrice=5, color1=208, color2=208, itemType="Shirt"), # Cerulean Blue Saffron Top
+                ShopItem(itemId=1058, price=45, goldPrice=5, color1=208, color2=208, itemType="Skirt"), # Cerulean Blue Saffron Skirt
+                ShopItem(itemId=3540, price=25, goldPrice=10, color1=226, color2=226, itemType="Shoes"), # Goldenrod Yellow Saffron Slippers
 
-                ShopItem(itemId=2061, price=10, goldPrice=3, color1=45, color2=139, itemType="HeadItem"), # Strawberry Red Poinsettia Headband with Seedling Green Trim
-                ShopItem(itemId=62, price=17, goldPrice=5, color1=139, color2=45, itemType="Shirt"), # Seedling Green Poinsettia Top
-                ShopItem(itemId=1067, price=17, goldPrice=5, color1=139, color2=45, itemType="Skirt"), # Seedling Green Poinsettia Skirt
-                ShopItem(itemId=3549, price=10, goldPrice=3, color1=139, color2=45, itemType="Shoes"), # Seedling Green Poinsettia Boots
+                ShopItem(itemId=2061, price=25, goldPrice=10, color1=45, color2=139, itemType="HeadItem"), # Strawberry Red Poinsettia Headband with Seedling Green Trim
+                ShopItem(itemId=62, price=45, goldPrice=5, color1=139, color2=45, itemType="Shirt"), # Seedling Green Poinsettia Top
+                ShopItem(itemId=1067, price=45, goldPrice=5, color1=139, color2=45, itemType="Skirt"), # Seedling Green Poinsettia Skirt
+                ShopItem(itemId=3549, price=25, goldPrice=10, color1=139, color2=45, itemType="Shoes"), # Seedling Green Poinsettia Boots
 
-                ShopItem(itemId=2051, price=10, goldPrice=3, color1=18, color2=18, itemType="HeadItem"), # Waterfall Blue White Rose Headband
-                ShopItem(itemId=52, price=17, goldPrice=5, color1=166, color2=18, itemType="Shirt"), # Snow White White Rose Top
-                ShopItem(itemId=1057, price=17, goldPrice=5, color1=166, color2=18, itemType="Skirt"), # Snow White White Rose Skirt
-                ShopItem(itemId=3539, price=10, goldPrice=3, color1=18, color2=18, itemType="Shoes"), # Waterfall Blue White Rose Slippers
+                ShopItem(itemId=2051, price=25, goldPrice=10, color1=18, color2=18, itemType="HeadItem"), # Waterfall Blue White Rose Headband
+                ShopItem(itemId=52, price=45, goldPrice=5, color1=166, color2=18, itemType="Shirt"), # Snow White White Rose Top
+                ShopItem(itemId=1057, price=45, goldPrice=5, color1=166, color2=18, itemType="Skirt"), # Snow White White Rose Skirt
+                ShopItem(itemId=3539, price=25, goldPrice=10, color1=18, color2=18, itemType="Shoes"), # Waterfall Blue White Rose Slippers
 
-                ShopItem(itemId=2054, price=10, goldPrice=3, color1=287, color2=121, itemType="HeadItem"), # Dianthus Red Cosmos Headband
-                ShopItem(itemId=55, price=17, goldPrice=5, color1=287, color2=121, itemType="Shirt"), # Dianthus Red Cosmos Top
-                ShopItem(itemId=1060, price=17, goldPrice=5, color1=287, color2=287, itemType="Skirt"), # Dianthus Red Cosmos Skirt
-                ShopItem(itemId=3542, price=10, goldPrice=3, color1=287, color2=121, itemType="Shoes"), # Dianthus Red Cosmos Boots
+                ShopItem(itemId=2054, price=25, goldPrice=10, color1=287, color2=121, itemType="HeadItem"), # Dianthus Red Cosmos Headband
+                ShopItem(itemId=55, price=45, goldPrice=5, color1=287, color2=121, itemType="Shirt"), # Dianthus Red Cosmos Top
+                ShopItem(itemId=1060, price=45, goldPrice=5, color1=287, color2=287, itemType="Skirt"), # Dianthus Red Cosmos Skirt
+                ShopItem(itemId=3542, price=25, goldPrice=10, color1=287, color2=121, itemType="Shoes"), # Dianthus Red Cosmos Boots
 
-                ShopItem(itemId=2049, price=10, goldPrice=3, color1=136, color2=125, itemType="HeadItem"), # Peacock Blue Iris Headband
-                ShopItem(itemId=50, price=17, goldPrice=5, color1=136, color2=136, itemType="Shirt"), # Peacock Blue Iris Top
-                ShopItem(itemId=1055, price=17, goldPrice=5, color1=136, color2=136, itemType="Skirt"), # Peacock Blue Iris Skirt
-                ShopItem(itemId=3537, price=10, goldPrice=3, color1=136, color2=136, itemType="Shoes"), # Peacock Blue Iris Boots
+                ShopItem(itemId=2049, price=25, goldPrice=10, color1=136, color2=125, itemType="HeadItem"), # Peacock Blue Iris Headband
+                ShopItem(itemId=50, price=45, goldPrice=5, color1=136, color2=136, itemType="Shirt"), # Peacock Blue Iris Top
+                ShopItem(itemId=1055, price=45, goldPrice=5, color1=136, color2=136, itemType="Skirt"), # Peacock Blue Iris Skirt
+                ShopItem(itemId=3537, price=25, goldPrice=10, color1=136, color2=136, itemType="Shoes"), # Peacock Blue Iris Boots
 
-                ShopItem(itemId=2046, price=10, goldPrice=3, color1=277, color2=277, itemType="HeadItem"), # Misty Purple Nerine Headband
-                ShopItem(itemId=47, price=17, goldPrice=5, color1=277, color2=144, itemType="Shirt"), # Misty Purple Nerine Top
-                ShopItem(itemId=1052, price=17, goldPrice=5, color1=277, color2=144, itemType="Skirt"), # Misty Purple Nerine Skirt
-                ShopItem(itemId=3534, price=10, goldPrice=3, color1=277, color2=144, itemType="Shoes"), # Misty Purple Nerine Boots
+                ShopItem(itemId=2046, price=25, goldPrice=10, color1=277, color2=277, itemType="HeadItem"), # Misty Purple Nerine Headband
+                ShopItem(itemId=47, price=45, goldPrice=5, color1=277, color2=144, itemType="Shirt"), # Misty Purple Nerine Top
+                ShopItem(itemId=1052, price=45, goldPrice=5, color1=277, color2=144, itemType="Skirt"), # Misty Purple Nerine Skirt
+                ShopItem(itemId=3534, price=25, goldPrice=10, color1=277, color2=144, itemType="Shoes"), # Misty Purple Nerine Boots
 
-                ShopItem(itemId=2065, price=10, goldPrice=3, color1=223, color2=223, itemType="HeadItem"), # Teal Blue Euphorbia Headband
-                ShopItem(itemId=66, price=17, goldPrice=5, color1=68, color2=223, itemType="Shirt"), # Huckleberry Blue Euphorbia Top
-                ShopItem(itemId=1071, price=17, goldPrice=5, color1=223, color2=68, itemType="Skirt"), # Teal Blue Euphorbia Skirt
-                ShopItem(itemId=3553, price=10, goldPrice=3, color1=223, color2=68, itemType="Shoes"), # Teal Blue Euphorbia Boots
+                ShopItem(itemId=2065, price=25, goldPrice=10, color1=223, color2=223, itemType="HeadItem"), # Teal Blue Euphorbia Headband
+                ShopItem(itemId=66, price=45, goldPrice=5, color1=68, color2=223, itemType="Shirt"), # Huckleberry Blue Euphorbia Top
+                ShopItem(itemId=1071, price=45, goldPrice=5, color1=223, color2=68, itemType="Skirt"), # Teal Blue Euphorbia Skirt
+                ShopItem(itemId=3553, price=25, goldPrice=10, color1=223, color2=68, itemType="Shoes"), # Teal Blue Euphorbia Boots
 
-                ShopItem(itemId=2053, price=10, goldPrice=3, color1=267, color2=267, itemType="HeadItem"), # Celestial Blue Dahlia Headband
-                ShopItem(itemId=54, price=17, goldPrice=5, color1=267, color2=166, itemType="Shirt"), # Celestial Blue Dahlia Top
-                ShopItem(itemId=1059, price=17, goldPrice=5, color1=267, color2=166, itemType="Skirt"), # Celestial Blue Dahlia Skirt
-                ShopItem(itemId=3541, price=10, goldPrice=3, color1=267, color2=267, itemType="Shoes"), # Celestial Blue Dahlia Slippers
+                ShopItem(itemId=2053, price=25, goldPrice=10, color1=267, color2=267, itemType="HeadItem"), # Celestial Blue Dahlia Headband
+                ShopItem(itemId=54, price=45, goldPrice=5, color1=267, color2=166, itemType="Shirt"), # Celestial Blue Dahlia Top
+                ShopItem(itemId=1059, price=45, goldPrice=5, color1=267, color2=166, itemType="Skirt"), # Celestial Blue Dahlia Skirt
+                ShopItem(itemId=3541, price=25, goldPrice=10, color1=267, color2=267, itemType="Shoes"), # Celestial Blue Dahlia Slippers
 
-                ShopItem(itemId=2059, price=10, goldPrice=3, color1=44, color2=44, itemType="HeadItem"), # Plumblossom Pink Geranium Headband
-                ShopItem(itemId=60, price=17, goldPrice=5, color1=44, color2=130, itemType="Shirt"), # Plumblossom Pink Geranium Top
-                ShopItem(itemId=1065, price=17, goldPrice=5, color1=44, color2=130, itemType="Skirt"), # Plumblossom Pink Geranium Skirt
-                ShopItem(itemId=3547, price=10, goldPrice=3, color1=44, color2=130, itemType="Shoes"), # Plumblossom Pink Geranium Slippers
+                ShopItem(itemId=2059, price=25, goldPrice=10, color1=44, color2=44, itemType="HeadItem"), # Plumblossom Pink Geranium Headband
+                ShopItem(itemId=60, price=45, goldPrice=5, color1=44, color2=130, itemType="Shirt"), # Plumblossom Pink Geranium Top
+                ShopItem(itemId=1065, price=45, goldPrice=5, color1=44, color2=130, itemType="Skirt"), # Plumblossom Pink Geranium Skirt
+                ShopItem(itemId=3547, price=25, goldPrice=10, color1=44, color2=130, itemType="Shoes"), # Plumblossom Pink Geranium Slippers
 
-                ShopItem(itemId=2048, price=10, goldPrice=3, color1=258, color2=264, itemType="HeadItem"), # Spearmint Green Bougainvillea Headband
-                ShopItem(itemId=49, price=17, goldPrice=5, color1=264, color2=258, itemType="Shirt"), # Jungle Green Bougainvillea Top
-                ShopItem(itemId=1054, price=17, goldPrice=5, color1=264, color2=258, itemType="Skirt"), # Jungle Green Bougainvillea Skirt
-                ShopItem(itemId=3536, price=10, goldPrice=3, color1=264, color2=258, itemType="Shoes"), # Jungle Green Bougainvillea Slippers
+                ShopItem(itemId=2048, price=25, goldPrice=10, color1=258, color2=264, itemType="HeadItem"), # Spearmint Green Bougainvillea Headband
+                ShopItem(itemId=49, price=45, goldPrice=5, color1=264, color2=258, itemType="Shirt"), # Jungle Green Bougainvillea Top
+                ShopItem(itemId=1054, price=45, goldPrice=5, color1=264, color2=258, itemType="Skirt"), # Jungle Green Bougainvillea Skirt
+                ShopItem(itemId=3536, price=25, goldPrice=10, color1=264, color2=258, itemType="Shoes"), # Jungle Green Bougainvillea Slippers
 
-                ShopItem(itemId=2056, price=10, goldPrice=3, color1=51, color2=55, itemType="HeadItem"), # Periwinkle Blue Aster Headband
-                ShopItem(itemId=57, price=17, goldPrice=5, color1=51, color2=55, itemType="Shirt"), #  Periwinkle Blue Aster Top
-                ShopItem(itemId=1062, price=17, goldPrice=5, color1=51, color2=55, itemType="Skirt"), # Periwinkle Blue Aster Skirt
-                ShopItem(itemId=3544, price=10, goldPrice=3, color1=51, color2=55, itemType="Shoes"), # Periwinkle Blue Aster Boots
+                ShopItem(itemId=2056, price=25, goldPrice=10, color1=51, color2=55, itemType="HeadItem"), # Periwinkle Blue Aster Headband
+                ShopItem(itemId=57, price=45, goldPrice=5, color1=51, color2=55, itemType="Shirt"), #  Periwinkle Blue Aster Top
+                ShopItem(itemId=1062, price=45, goldPrice=5, color1=51, color2=55, itemType="Skirt"), # Periwinkle Blue Aster Skirt
+                ShopItem(itemId=3544, price=25, goldPrice=10, color1=51, color2=55, itemType="Shoes"), # Periwinkle Blue Aster Boots
 
-                ShopItem(itemId=2121, price=10, goldPrice=3, color1=27, color2=26, itemType="HeadItem"), # Corn Cob Yellow Commelina Band
-                ShopItem(itemId=110, price=17, goldPrice=5, color1=27, color2=26, itemType="Shirt"), # Corn Cob Yellow Commelina Top
-                ShopItem(itemId=1122, price=17, goldPrice=5, color1=27, color2=26, itemType="Skirt"), #  Corn Cob Yellow Commelina Skirt
-                ShopItem(itemId=3580, price=10, goldPrice=3, color1=27, color2=27, itemType="Shoes"), #  Corn Cob Yellow Commelina Shoes
+                ShopItem(itemId=2121, price=25, goldPrice=10, color1=27, color2=26, itemType="HeadItem"), # Corn Cob Yellow Commelina Band
+                ShopItem(itemId=110, price=45, goldPrice=5, color1=27, color2=26, itemType="Shirt"), # Corn Cob Yellow Commelina Top
+                ShopItem(itemId=1122, price=45, goldPrice=5, color1=27, color2=26, itemType="Skirt"), #  Corn Cob Yellow Commelina Skirt
+                ShopItem(itemId=3580, price=25, goldPrice=10, color1=27, color2=27, itemType="Shoes"), #  Corn Cob Yellow Commelina Shoes
             ],    
         ),
             ShopCollection(
             collectionId=28, # Animal-Inspired Fashions
             currencyId=FairiesConstants.PINE_NEEDLES,
             items=[
-                ShopItem(itemId=2073, price=10, goldPrice=3, color1=206, color2=142, itemType="HeadItem"), # Raven Black Buzzy Bee Mask
-                ShopItem(itemId=76, price=17, goldPrice=5, color1=206, color2=142, itemType="Shirt"), # Raven Black Buzzy Bee Striped Wrap
-                ShopItem(itemId=1003, price=17, goldPrice=5, color1=142, color2=142, itemType="Skirt"), # Bumble Bee Yellow Leafy Bubble Skirt
-                ShopItem(itemId=3501, price=10, goldPrice=3, color1=142, color2=142, itemType="Shoes"), # Bumble Bee Yellow Petal Slippers
+                ShopItem(itemId=2073, price=25, goldPrice=10, color1=206, color2=142, itemType="HeadItem"), # Raven Black Buzzy Bee Mask
+                ShopItem(itemId=76, price=45, goldPrice=16, color1=206, color2=142, itemType="Shirt"), # Raven Black Buzzy Bee Striped Wrap
+                ShopItem(itemId=1003, price=45, goldPrice=16, color1=142, color2=142, itemType="Skirt"), # Bumble Bee Yellow Leafy Bubble Skirt
+                ShopItem(itemId=3501, price=25, goldPrice=10, color1=142, color2=142, itemType="Shoes"), # Bumble Bee Yellow Petal Slippers
 
-                ShopItem(itemId=2071, price=10, goldPrice=3, color1=44, color2=257, itemType="HeadItem"), # Plumblossom Pink Little Light Antennae
-                ShopItem(itemId=91, price=17, goldPrice=5, color1=44, color2=44, itemType="Shirt"), # Plumblossom Pink Little Light Top
-                ShopItem(itemId=1091, price=17, goldPrice=5, color1=44, color2=257, itemType="Skirt"), #  Plumblossom Pink Little Light Mini
-                ShopItem(itemId=3501, price=10, goldPrice=3, color1=44, color2=44, itemType="Shoes"), #  Plumblossom Pink Petal Slippers
+                ShopItem(itemId=2071, price=25, goldPrice=10, color1=44, color2=257, itemType="HeadItem"), # Plumblossom Pink Little Light Antennae
+                ShopItem(itemId=91, price=45, goldPrice=16, color1=44, color2=44, itemType="Shirt"), # Plumblossom Pink Little Light Top
+                ShopItem(itemId=1091, price=45, goldPrice=16, color1=44, color2=257, itemType="Skirt"), #  Plumblossom Pink Little Light Mini
+                ShopItem(itemId=3501, price=25, goldPrice=10, color1=44, color2=44, itemType="Shoes"), #  Plumblossom Pink Petal Slippers
 
-                ShopItem(itemId=2071, price=10, goldPrice=3, color1=206, color2=189, itemType="HeadItem"), # Raven Black Little Light Antennae
-                ShopItem(itemId=172, price=17, goldPrice=5, color1=206, color2=189, itemType="Shirt"), # Raven Black Ladybug Tank
-                ShopItem(itemId=1156, price=17, goldPrice=5, color1=206, color2=189, itemType="Skirt"), # Raven Black Ladybug Skirt
-                ShopItem(itemId=3501, price=10, goldPrice=3, color1=189, color2=189, itemType="Shoes"), # Ladybug Red Petal Slippers
+                ShopItem(itemId=2071, price=25, goldPrice=10, color1=206, color2=189, itemType="HeadItem"), # Raven Black Little Light Antennae
+                ShopItem(itemId=172, price=45, goldPrice=16, color1=206, color2=189, itemType="Shirt"), # Raven Black Ladybug Tank
+                ShopItem(itemId=1156, price=45, goldPrice=16, color1=206, color2=189, itemType="Skirt"), # Raven Black Ladybug Skirt
+                ShopItem(itemId=3501, price=25, goldPrice=10, color1=189, color2=189, itemType="Shoes"), # Ladybug Red Petal Slippers
 
-                ShopItem(itemId=2151, price=10, goldPrice=3, color1=1, color2=1, itemType="HeadItem"), # Mint Green Dragonfly Mask
-                ShopItem(itemId=186, price=17, goldPrice=5, color1=1, color2=1, itemType="Shirt"), # Mint Green Dragonfly Top
-                ShopItem(itemId=1168, price=17, goldPrice=5, color1=1, color2=1, itemType="Skirt"), # Mint Green Dragonfly Skirt
-                ShopItem(itemId=3501, price=10, goldPrice=3, color1=1, color2=1, itemType="Shoes"), # Mint Green Petal Slippers
+                ShopItem(itemId=2151, price=25, goldPrice=10, color1=1, color2=1, itemType="HeadItem"), # Mint Green Dragonfly Mask
+                ShopItem(itemId=186, price=45, goldPrice=16, color1=1, color2=1, itemType="Shirt"), # Mint Green Dragonfly Top
+                ShopItem(itemId=1168, price=45, goldPrice=16, color1=1, color2=1, itemType="Skirt"), # Mint Green Dragonfly Skirt
+                ShopItem(itemId=3501, price=25, goldPrice=10, color1=1, color2=1, itemType="Shoes"), # Mint Green Petal Slippers
 
-                ShopItem(itemId=2150, price=10, goldPrice=3, color1=267, color2=186, itemType="HeadItem"), # Celestial Blue Hummingbird Mask
-                ShopItem(itemId=187, price=17, goldPrice=5, color1=267, color2=186, itemType="Shirt"), # Celestial Blue Hummingbird Top
-                ShopItem(itemId=1169, price=17, goldPrice=5, color1=267, color2=186, itemType="Skirt"), # Celestial Blue Hummingbird Skirt
-                ShopItem(itemId=3501, price=10, goldPrice=3, color1=267, color2=267, itemType="Shoes"), # Celestial Blue Petal Slippers
+                ShopItem(itemId=2150, price=25, goldPrice=10, color1=267, color2=186, itemType="HeadItem"), # Celestial Blue Hummingbird Mask
+                ShopItem(itemId=187, price=45, goldPrice=16, color1=267, color2=186, itemType="Shirt"), # Celestial Blue Hummingbird Top
+                ShopItem(itemId=1169, price=45, goldPrice=16, color1=267, color2=186, itemType="Skirt"), # Celestial Blue Hummingbird Skirt
+                ShopItem(itemId=3501, price=25, goldPrice=10, color1=267, color2=267, itemType="Shoes"), # Celestial Blue Petal Slippers
 
-                ShopItem(itemId=2033, price=10, goldPrice=3, color1=175, color2=159, itemType="HeadItem"), # Creek Green Firefly Spotlight Barrette
-                ShopItem(itemId=2524, price=3, goldPrice=1, color1=175, color2=159, itemType="Necklace"), # Creek Green Firefly Glow Choker
-                ShopItem(itemId=29, price=17, goldPrice=5, color1=175, color2=159, itemType="Shirt"), # Creek Green Orchid Firefly Wrap
-                ShopItem(itemId=1032, price=17, goldPrice=5, color1=175, color2=159, itemType="Skirt"), # Creek Green Slit Satin Firefly Skirt
-                ShopItem(itemId=3519, price=10, goldPrice=3, color1=175, color2=159, itemType="Shoes"), # Creek Green Firefly Glow Toes Slippers
+                ShopItem(itemId=2033, price=25, goldPrice=10, color1=175, color2=159, itemType="HeadItem"), # Creek Green Firefly Spotlight Barrette
+                ShopItem(itemId=2524, price=15, goldPrice=6, color1=175, color2=159, itemType="Necklace"), # Creek Green Firefly Glow Choker
+                ShopItem(itemId=29, price=45, goldPrice=16, color1=175, color2=159, itemType="Shirt"), # Creek Green Orchid Firefly Wrap
+                ShopItem(itemId=1032, price=45, goldPrice=16, color1=175, color2=159, itemType="Skirt"), # Creek Green Slit Satin Firefly Skirt
+                ShopItem(itemId=3519, price=25, goldPrice=10, color1=175, color2=159, itemType="Shoes"), # Creek Green Firefly Glow Toes Slippers
 
-                ShopItem(itemId=90, price=17, goldPrice=5, color1=63, color2=166, itemType="Shirt"), # Butterfly Blue Fanciful Flutter Top with White Trim
-                ShopItem(itemId=548, price=3, goldPrice=1, color1=63, color2=166, itemType="Belt"), # Butterfly Blue Fanciful Flutter Sash with White Trim
-                ShopItem(itemId=1090, price=17, goldPrice=5, color1=63, color2=166, itemType="Skirt"), # Butterfly Blue Fanciful Flutter Gown with White Trim
-                ShopItem(itemId=3559, price=10, goldPrice=3, color1=63, color2=166, itemType="Shoes"), # Butterfly Blue Fanciful Flutter Flats with White Trim
+                ShopItem(itemId=90, price=45, goldPrice=16, color1=63, color2=166, itemType="Shirt"), # Butterfly Blue Fanciful Flutter Top with White Trim
+                ShopItem(itemId=548, price=15, goldPrice=1, color1=63, color2=166, itemType="Belt"), # Butterfly Blue Fanciful Flutter Sash with White Trim
+                ShopItem(itemId=1090, price=45, goldPrice=16, color1=63, color2=166, itemType="Skirt"), # Butterfly Blue Fanciful Flutter Gown with White Trim
+                ShopItem(itemId=3559, price=25, goldPrice=10, color1=63, color2=166, itemType="Shoes"), # Butterfly Blue Fanciful Flutter Flats with White Trim
 
-                ShopItem(itemId=376, price=17, goldPrice=5, color1=189, color2=206, itemType="Shirt"), # Ladybug Red Morpho Butterfly Top with Raven Black Trim
-                ShopItem(itemId=635, price=3, goldPrice=1, color1=189, color2=189, itemType="Belt"), # Ladybug Red Morpho Butterfly Sash
-                ShopItem(itemId=1294, price=17, goldPrice=5, color1=30, color2=206, itemType="Skirt"), # Pumpkin Orange Morpho Butterfly Skirt with Raven Black Trim
-                ShopItem(itemId=3716, price=10, goldPrice=3, color1=206, color2=189, itemType="Shoes"), # Raven Black Morpho Butterfly Shoes
+                ShopItem(itemId=376, price=45, goldPrice=16, color1=189, color2=206, itemType="Shirt"), # Ladybug Red Morpho Butterfly Top with Raven Black Trim
+                ShopItem(itemId=635, price=15, goldPrice=1, color1=189, color2=189, itemType="Belt"), # Ladybug Red Morpho Butterfly Sash
+                ShopItem(itemId=1294, price=45, goldPrice=16, color1=30, color2=206, itemType="Skirt"), # Pumpkin Orange Morpho Butterfly Skirt with Raven Black Trim
+                ShopItem(itemId=3716, price=25, goldPrice=10, color1=206, color2=189, itemType="Shoes"), # Raven Black Morpho Butterfly Shoes
 
-                ShopItem(itemId=2367, price=10, goldPrice=3, color1=216, color2=216, itemType="HeadItem"), # Slate Gray Raven Mask
-                ShopItem(itemId=499, price=17, goldPrice=5, color1=206, color2=216, itemType="Shirt"), # Raven Black Raven Costume Top with Slate Gray Trim
-                ShopItem(itemId=1415, price=17, goldPrice=5, color1=206, color2=216, itemType="Skirt"), # Raven Black Raven Skirt with Slate Gray Trim
-                ShopItem(itemId=3794, price=10, goldPrice=3, color1=206, color2=216, itemType="Shoes"), # Raven Black Raven Heels with Slate Gray Trim
+                ShopItem(itemId=2367, price=25, goldPrice=10, color1=216, color2=216, itemType="HeadItem"), # Slate Gray Raven Mask
+                ShopItem(itemId=499, price=45, goldPrice=16, color1=206, color2=216, itemType="Shirt"), # Raven Black Raven Costume Top with Slate Gray Trim
+                ShopItem(itemId=1415, price=45, goldPrice=16, color1=206, color2=216, itemType="Skirt"), # Raven Black Raven Skirt with Slate Gray Trim
+                ShopItem(itemId=3794, price=25, goldPrice=10, color1=206, color2=216, itemType="Shoes"), # Raven Black Raven Heels with Slate Gray Trim
 
-                ShopItem(itemId=2347, price=10, goldPrice=3, color1=224, color2=224, itemType="HeadItem"), # Ivory White Fox Mask
-                ShopItem(itemId=1000011, price=17, goldPrice=5, color1=224, color2=224, itemType="Shirt"), # Ivory White Fox Top
-                ShopItem(itemId=1395, price=17, goldPrice=5, color1=224, color2=224, itemType="Skirt"), # Ivory White Fox Skirt
-                ShopItem(itemId=3801, price=10, goldPrice=3, color1=224, color2=224, itemType="Shoes"), # Ivory White Furry Critter Boots
+                ShopItem(itemId=2347, price=25, goldPrice=10, color1=224, color2=224, itemType="HeadItem"), # Ivory White Fox Mask
+                ShopItem(itemId=1000011, price=45, goldPrice=16, color1=224, color2=224, itemType="Shirt"), # Ivory White Fox Top
+                ShopItem(itemId=1395, price=45, goldPrice=16, color1=224, color2=224, itemType="Skirt"), # Ivory White Fox Skirt
+                ShopItem(itemId=3801, price=25, goldPrice=10, color1=224, color2=224, itemType="Shoes"), # Ivory White Furry Critter Boots
 
-                ShopItem(itemId=2360, price=10, goldPrice=3, color1=206, color2=169, itemType="HeadItem"), # Raven Black Raccoon Mask
-                ShopItem(itemId=481, price=17, goldPrice=5, color1=169, color2=206, itemType="Shirt"), # Squirrel Gray Raccoon Top
-                ShopItem(itemId=1398, price=17, goldPrice=5, color1=169, color2=206, itemType="Skirt"), # Squirrel Gray Raccoon Skirt
-                ShopItem(itemId=3801, price=10, goldPrice=3, color1=206, color2=169, itemType="Shoes"), # Raven Black Furry Critter Boots
+                ShopItem(itemId=2360, price=25, goldPrice=10, color1=206, color2=169, itemType="HeadItem"), # Raven Black Raccoon Mask
+                ShopItem(itemId=481, price=45, goldPrice=16, color1=169, color2=206, itemType="Shirt"), # Squirrel Gray Raccoon Top
+                ShopItem(itemId=1398, price=45, goldPrice=16, color1=169, color2=206, itemType="Skirt"), # Squirrel Gray Raccoon Skirt
+                ShopItem(itemId=3801, price=25, goldPrice=10, color1=206, color2=169, itemType="Shoes"), # Raven Black Furry Critter Boots
 
-                ShopItem(itemId=2440, price=10, goldPrice=3, color1=212, color2=194, itemType="HeadItem"), # Indigo Purple Songbird Headband
-                ShopItem(itemId=1000078, price=17, goldPrice=5, color1=194, color2=212, itemType="Shirt"), # Electric Pink Songbird Top
-                ShopItem(itemId=1484, price=17, goldPrice=5, color1=212, color2=194, itemType="Skirt"), # Indigo Purple Songbird Skirt
-                ShopItem(itemId=3869, price=10, goldPrice=3, color1=212, color2=194, itemType="Shoes"), # Indigo Purple Songbird Heels
+                ShopItem(itemId=2440, price=25, goldPrice=10, color1=212, color2=194, itemType="HeadItem"), # Indigo Purple Songbird Headband
+                ShopItem(itemId=1000078, price=45, goldPrice=16, color1=194, color2=212, itemType="Shirt"), # Electric Pink Songbird Top
+                ShopItem(itemId=1484, price=45, goldPrice=16, color1=212, color2=194, itemType="Skirt"), # Indigo Purple Songbird Skirt
+                ShopItem(itemId=3869, price=25, goldPrice=10, color1=212, color2=194, itemType="Shoes"), # Indigo Purple Songbird Heels
             ],
         ),   
             ShopCollection(
             collectionId=40, # Casual and Sporty Wear
             currencyId=FairiesConstants.PINE_NEEDLES,
             items=[
-                ShopItem(itemId=303, price=17, goldPrice=5, color1=166, color2=286, itemType="Shirt"), # Snow White Snowbound Ski Jacket with Cherry Pink Trim
-                ShopItem(itemId=1253, price=17, goldPrice=5, color1=166, color2=286, itemType="Skirt"), # Snow White Warm Ski Pants with Cherry Pink Trim
-                ShopItem(itemId=3682, price=10, goldPrice=3, color1=105, color2=286, itemType="Shoes"), # Siltstone Tan Swift Skis with Cherry Pink Trim
+                ShopItem(itemId=303, price=45, goldPrice=16, color1=166, color2=286, itemType="Shirt"), # Snow White Snowbound Ski Jacket with Cherry Pink Trim
+                ShopItem(itemId=1253, price=45, goldPrice=16, color1=166, color2=286, itemType="Skirt"), # Snow White Warm Ski Pants with Cherry Pink Trim
+                ShopItem(itemId=3682, price=25, goldPrice=10, color1=105, color2=286, itemType="Shoes"), # Siltstone Tan Swift Skis with Cherry Pink Trim
 
-                ShopItem(itemId=197, price=17, goldPrice=5, color1=267, color2=267, itemType="Shirt"), # Celestial Blue Rainbow Tee
-                ShopItem(itemId=588, price=3, goldPrice=1, color1=141, color2=141, itemType="Belt"), # Thundercloud Gray Studded Belt
-                ShopItem(itemId=1143, price=17, goldPrice=5, color1=118, color2=118, itemType="Skirt"), # Sapphire Blue Denim Flyers
-                ShopItem(itemId=3849, price=10, goldPrice=3, color1=224, color2=224, itemType="Shoes"), # Ivory White Rainbow Sneakers
+                ShopItem(itemId=197, price=45, goldPrice=16, color1=267, color2=267, itemType="Shirt"), # Celestial Blue Rainbow Tee
+                ShopItem(itemId=588, price=15, goldPrice=6, color1=141, color2=141, itemType="Belt"), # Thundercloud Gray Studded Belt
+                ShopItem(itemId=1143, price=45, goldPrice=16, color1=118, color2=118, itemType="Skirt"), # Sapphire Blue Denim Flyers
+                ShopItem(itemId=3849, price=25, goldPrice=10, color1=224, color2=224, itemType="Shoes"), # Ivory White Rainbow Sneakers
 
-                ShopItem(itemId=145, price=17, goldPrice=5, color1=162, color2=162, itemType="Shirt"), # Sunglow Yellow Sporty Top
-                ShopItem(itemId=1048, price=17, goldPrice=5, color1=162, color2=162, itemType="Skirt"), # Sunglow Yellow Sports Shorts
-                ShopItem(itemId=3504, price=10, goldPrice=3, color1=162, color2=162, itemType="Shoes"), # Sunglow Yellow Striders
+                ShopItem(itemId=145, price=45, goldPrice=16, color1=162, color2=162, itemType="Shirt"), # Sunglow Yellow Sporty Top
+                ShopItem(itemId=1048, price=45, goldPrice=16, color1=162, color2=162, itemType="Skirt"), # Sunglow Yellow Sports Shorts
+                ShopItem(itemId=3504, price=25, goldPrice=10, color1=162, color2=162, itemType="Shoes"), # Sunglow Yellow Striders
 
-                ShopItem(itemId=214, price=17, goldPrice=5, color1=121, color2=282, itemType="Shirt"), # Daisy Pink Pretty Plaid Top
-                ShopItem(itemId=1187, price=17, goldPrice=5, color1=121, color2=121, itemType="Skirt"), # Daisy Pink Stitched Leaf Skirt
-                ShopItem(itemId=3620, price=10, goldPrice=3, color1=121, color2=121, itemType="Shoes"), # Daisy Pink Pretty Plaid Flats
+                ShopItem(itemId=214, price=45, goldPrice=16, color1=121, color2=282, itemType="Shirt"), # Daisy Pink Pretty Plaid Top
+                ShopItem(itemId=1187, price=45, goldPrice=16, color1=121, color2=121, itemType="Skirt"), # Daisy Pink Stitched Leaf Skirt
+                ShopItem(itemId=3620, price=25, goldPrice=10, color1=121, color2=121, itemType="Shoes"), # Daisy Pink Pretty Plaid Flats
 
-                ShopItem(itemId=283, price=17, goldPrice=5, color1=211, color2=5, itemType="Shirt"), # Gentian Purple Sporty Tankini
-                ShopItem(itemId=1233, price=17, goldPrice=5, color1=211, color2=5, itemType="Skirt"), # Gentian Purple Sporty Swim Skirt
-                ShopItem(itemId=3757, price=10, goldPrice=3, color1=211, color2=5, itemType="Shoes"), # Gentian Purple Summer Splash Shoes with Wysteria Purple Trim
+                ShopItem(itemId=283, price=45, goldPrice=16, color1=211, color2=5, itemType="Shirt"), # Gentian Purple Sporty Tankini
+                ShopItem(itemId=1233, price=45, goldPrice=16, color1=211, color2=5, itemType="Skirt"), # Gentian Purple Sporty Swim Skirt
+                ShopItem(itemId=3757, price=25, goldPrice=10, color1=211, color2=5, itemType="Shoes"), # Gentian Purple Summer Splash Shoes with Wysteria Purple Trim
 
-                ShopItem(itemId=2335, price=10, goldPrice=3, color1=267, color2=166, itemType="HeadItem"), # Celestial Blue Summer Splash Hat
-                ShopItem(itemId=415, price=17, goldPrice=5, color1=267, color2=166, itemType="Shirt"), # Celestial Blue Summer Splash Top
-                ShopItem(itemId=1334, price=17, goldPrice=5, color1=267, color2=166, itemType="Skirt"), # Celestial Blue Summer Splash Skirt
-                ShopItem(itemId=3757, price=10, goldPrice=3, color1=166, color2=267, itemType="Shoes"), # Snow White Summer Splash Shoes
+                ShopItem(itemId=2335, price=25, goldPrice=10, color1=267, color2=166, itemType="HeadItem"), # Celestial Blue Summer Splash Hat
+                ShopItem(itemId=415, price=45, goldPrice=16, color1=267, color2=166, itemType="Shirt"), # Celestial Blue Summer Splash Top
+                ShopItem(itemId=1334, price=45, goldPrice=16, color1=267, color2=166, itemType="Skirt"), # Celestial Blue Summer Splash Skirt
+                ShopItem(itemId=3757, price=25, goldPrice=10, color1=166, color2=267, itemType="Shoes"), # Snow White Summer Splash Shoes
 
-                ShopItem(itemId=2043, price=10, goldPrice=3, color1=175, color2=175, itemType="HeadItem"), # Creek Green Sunny Days Hat
-                ShopItem(itemId=45, price=17, goldPrice=5, color1=17, color2=175, itemType="Shirt"), # Tendershoot Green Sunshine Top
-                ShopItem(itemId=1050, price=17, goldPrice=5, color1=35, color2=175, itemType="Skirt"), # Celery Green Sunshine Skirt
-                ShopItem(itemId=3610, price=10, goldPrice=3, color1=17, color2=175, itemType="Shoes"), # Tendershoot Green Fresh Petal Pumps
+                ShopItem(itemId=2043, price=25, goldPrice=10, color1=175, color2=175, itemType="HeadItem"), # Creek Green Sunny Days Hat
+                ShopItem(itemId=45, price=45, goldPrice=16, color1=17, color2=175, itemType="Shirt"), # Tendershoot Green Sunshine Top
+                ShopItem(itemId=1050, price=45, goldPrice=16, color1=35, color2=175, itemType="Skirt"), # Celery Green Sunshine Skirt
+                ShopItem(itemId=3610, price=25, goldPrice=10, color1=17, color2=175, itemType="Shoes"), # Tendershoot Green Fresh Petal Pumps
 
-                ShopItem(itemId=46, price=17, goldPrice=5, color1=278, color2=135, itemType="Shirt"), # Aster Purple Tropical Top
-                ShopItem(itemId=539, price=3, goldPrice=1, color1=135, color2=135, itemType="Belt"), # Boysenberry Purple Tropical Belt
-                ShopItem(itemId=1051, price=17, goldPrice=5, color1=278, color2=135, itemType="Skirt"), # Aster Purple Tropical Sarong
-                ShopItem(itemId=3568, price=10, goldPrice=3, color1=135, color2=278, itemType="Shoes"), # Boysenberry Purple Tie Dye Sandals
+                ShopItem(itemId=46, price=45, goldPrice=16, color1=278, color2=135, itemType="Shirt"), # Aster Purple Tropical Top
+                ShopItem(itemId=539, price=15, goldPrice=6, color1=135, color2=135, itemType="Belt"), # Boysenberry Purple Tropical Belt
+                ShopItem(itemId=1051, price=45, goldPrice=16, color1=278, color2=135, itemType="Skirt"), # Aster Purple Tropical Sarong
+                ShopItem(itemId=3568, price=25, goldPrice=10, color1=135, color2=278, itemType="Shoes"), # Boysenberry Purple Tie Dye Sandals
 
-                ShopItem(itemId=28, price=17, goldPrice=5, color1=208, color2=208, itemType="Shirt"), # Cerulean Blue Bubble Button Top
-                ShopItem(itemId=532, price=3, goldPrice=1, color1=69, color2=208, itemType="Belt"), # Powder Blue Triple Bubble Belt
-                ShopItem(itemId=1010, price=17, goldPrice=5, color1=208, color2=208, itemType="Skirt"), # Cerulean Blue Lily Pad Bubble Skirt
-                ShopItem(itemId=3520, price=10, goldPrice=3, color1=208, color2=208, itemType="Shoes"), # Cerulean Blue Bubble Top Slippers
+                ShopItem(itemId=28, price=45, goldPrice=16, color1=208, color2=208, itemType="Shirt"), # Cerulean Blue Bubble Button Top
+                ShopItem(itemId=532, price=15, goldPrice=6, color1=69, color2=208, itemType="Belt"), # Powder Blue Triple Bubble Belt
+                ShopItem(itemId=1010, price=45, goldPrice=16, color1=208, color2=208, itemType="Skirt"), # Cerulean Blue Lily Pad Bubble Skirt
+                ShopItem(itemId=3520, price=25, goldPrice=10, color1=208, color2=208, itemType="Shoes"), # Cerulean Blue Bubble Top Slippers
             ],    
         ),    
         ShopCollection(
@@ -1029,38 +1029,38 @@ SHOPS = [
                     ShopItem(itemId=3595, price=33, goldPrice=10, color1=179, color2=137, itemType="Shoes"), # Iridessa Yellow, Lemon Yellow
                     # Rabbit - Sparrowmen
                     ShopItem(itemId=2127, price=20, goldPrice=7, color1=178, color2=178, itemType="HeadItem"), # Fawn Orange
-                    ShopItem(itemId=142, price=17, goldPrice=5, color1=237, color2=78, itemType="Shirt"), # Melon Orange Animal-Talent Tee 
-                    ShopItem(itemId=1193, price=17, goldPrice=5, color1=178, color2=178, itemType="Skirt"), # Fawn Orange Sporty Shorts
-                    ShopItem(itemId=3597, price=10, goldPrice=3, color1=178, color2=237, itemType="Shoes"), # Fawn Orange Camp Referee Shoes with Melon Orange Trim
+                    ShopItem(itemId=142, price=37, goldPrice=11, color1=237, color2=78, itemType="Shirt"), # Melon Orange Animal-Talent Tee 
+                    ShopItem(itemId=1193, price=33, goldPrice=10, color1=178, color2=178, itemType="Skirt"), # Fawn Orange Sporty Shorts
+                    ShopItem(itemId=3597, price=33, goldPrice=10, color1=178, color2=237, itemType="Shoes"), # Fawn Orange Camp Referee Shoes with Melon Orange Trim
                     # Butterfly - Sparrowmen
                     ShopItem(itemId=2127, price=20, goldPrice=7, color1=174, color2=174, itemType="HeadItem"), # Rosetta Red
-                    ShopItem(itemId=139, price=17, goldPrice=5, color1=174, color2=121, itemType="Shirt"), # Rosetta Red Garden-Talent Tee 
-                    ShopItem(itemId=1193, price=17, goldPrice=5, color1=174, color2=174, itemType="Skirt"), # Rosetta Red Sporty Shorts
-                    ShopItem(itemId=3597, price=10, goldPrice=3, color1=174, color2=121, itemType="Shoes"), # Rosetta Red Camp Referee Shoes with Daisy Pink Trim
+                    ShopItem(itemId=139, price=37, goldPrice=11, color1=174, color2=121, itemType="Shirt"), # Rosetta Red Garden-Talent Tee 
+                    ShopItem(itemId=1193, price=33, goldPrice=10, color1=174, color2=174, itemType="Skirt"), # Rosetta Red Sporty Shorts
+                    ShopItem(itemId=3597, price=33, goldPrice=10, color1=174, color2=121, itemType="Shoes"), # Rosetta Red Camp Referee Shoes with Daisy Pink Trim
                     # Otters - Sparrowmen
                     ShopItem(itemId=2127, price=20, goldPrice=7, color1=176, color2=176, itemType="HeadItem"), # Silvermist Blue
-                    ShopItem(itemId=141, price=17, goldPrice=5, color1=176, color2=219, itemType="Shirt"), # Silvermist Blue Water-Talent Tee
-                    ShopItem(itemId=1193, price=17, goldPrice=5, color1=176, color2=176, itemType="Skirt"), # Silvermist Blue Sporty Shorts
-                    ShopItem(itemId=3597, price=10, goldPrice=3, color1=176, color2=219, itemType="Shoes"), # Silvermist Blue Camp Referee Shoes with Crystal Blue Trim
+                    ShopItem(itemId=141, price=37, goldPrice=11, color1=176, color2=219, itemType="Shirt"), # Silvermist Blue Water-Talent Tee
+                    ShopItem(itemId=1193, price=33, goldPrice=10, color1=176, color2=176, itemType="Skirt"), # Silvermist Blue Sporty Shorts
+                    ShopItem(itemId=3597, price=33, goldPrice=10, color1=176, color2=219, itemType="Shoes"), # Silvermist Blue Camp Referee Shoes with Crystal Blue Trim
                     # Turtle - Sparrowmen
                     ShopItem(itemId=2127, price=20, goldPrice=7, color1=145, color2=145, itemType="HeadItem"), # Tinker Bell Green
-                    ShopItem(itemId=143, price=17, goldPrice=5, color1=145, color2=250, itemType="Shirt"), # Tinker Bell Green Tinker-Talent Tee
-                    ShopItem(itemId=1193, price=17, goldPrice=5, color1=145, color2=145, itemType="Skirt"), # Tinker Bell Green Sporty Shorts
-                    ShopItem(itemId=3597, price=10, goldPrice=3, color1=145, color2=250, itemType="Shoes"), # Tinker Bell Green Camp Referee Shoes with Caramel Tan Trim 
+                    ShopItem(itemId=143, price=37, goldPrice=11, color1=145, color2=250, itemType="Shirt"), # Tinker Bell Green Tinker-Talent Tee
+                    ShopItem(itemId=1193, price=33, goldPrice=10, color1=145, color2=145, itemType="Skirt"), # Tinker Bell Green Sporty Shorts
+                    ShopItem(itemId=3597, price=33, goldPrice=10, color1=145, color2=250, itemType="Shoes"), # Tinker Bell Green Camp Referee Shoes with Caramel Tan Trim 
                     # Gloworm - Sparrowmen
                     ShopItem(itemId=2127, price=20, goldPrice=7, color1=179, color2=179, itemType="HeadItem"), # Iridessa Yellow
-                    ShopItem(itemId=140, price=17, goldPrice=5, color1=179, color2=137, itemType="Shirt"), # Iridessa Yellow Light-Talent Tee 
-                    ShopItem(itemId=1193, price=17, goldPrice=5, color1=179, color2=179, itemType="Skirt"), # Iridessa Yellow Sporty Shorts
-                    ShopItem(itemId=3597, price=10, goldPrice=3, color1=179, color2=137, itemType="Shoes"), # Iridessa Yellow Camp Referee Shoes with Lemon Yellow Trim
+                    ShopItem(itemId=140, price=37, goldPrice=11, color1=179, color2=137, itemType="Shirt"), # Iridessa Yellow Light-Talent Tee 
+                    ShopItem(itemId=1193, price=33, goldPrice=10, color1=179, color2=179, itemType="Skirt"), # Iridessa Yellow Sporty Shorts
+                    ShopItem(itemId=3597, price=33, goldPrice=10, color1=179, color2=137, itemType="Shoes"), # Iridessa Yellow Camp Referee Shoes with Lemon Yellow Trim
                 ],
             ),
             ShopCollection(
                 collectionId=133, # Lobster
                 currencyId=FairiesConstants.MEADOW_GRASS,
                 items=[
-                    ShopItem(itemId=2286, price=10, goldPrice=3, color1=189, color2=7, itemType="HeadItem"), # Lobster Mask
-                    ShopItem(itemId=347, price=17, goldPrice=5, color1=189, color2=7, itemType="Shirt"), # Lobster Top
-                    ShopItem(itemId=1293, price=17, goldPrice=5, color1=189, color2=7, itemType="Skirt"),
+                    ShopItem(itemId=2286, price=33, goldPrice=10, color1=189, color2=7, itemType="HeadItem"), # Lobster Mask
+                    ShopItem(itemId=347, price=37, goldPrice=11, color1=189, color2=7, itemType="Shirt"), # Lobster Top
+                    ShopItem(itemId=1293, price=33, goldPrice=10, color1=189, color2=7, itemType="Skirt"),
                 ],
             ),
         ],
@@ -1083,75 +1083,75 @@ SHOPS = [
                 collectionId=83, # Mainland Styles
                 currencyId=FairiesConstants.MAPLE_LEAVES,
                 items=[
-                    ShopItem(itemId=484, price=30, goldPrice=5, color1=45, color2=248, itemType="Shirt"), # Strawberry Red Varsity Jacket
-                    ShopItem(itemId=1651, price=10, goldPrice=2, color1=78, color2=224, itemType="WristItem"), # Fawn Brown Football
-                    ShopItem(itemId=1172, price=25, goldPrice=5, color1=118, color2=118, itemType="Skirt"), # Sapphire Blue Dry Leaf Trousers
-                    ShopItem(itemId=3625, price=15, goldPrice=3, color1=78, color2=224, itemType="Shoes"), # Fawn Brown Woodchucks with White Trim
+                    ShopItem(itemId=484, price=45, goldPrice=16, color1=45, color2=248, itemType="Shirt"), # Strawberry Red Varsity Jacket
+                    ShopItem(itemId=1651, price=25, goldPrice=6, color1=78, color2=224, itemType="WristItem"), # Fawn Brown Football
+                    ShopItem(itemId=1172, price=45, goldPrice=16, color1=118, color2=118, itemType="Skirt"), # Sapphire Blue Dry Leaf Trousers
+                    ShopItem(itemId=3625, price=25, goldPrice=10, color1=78, color2=224, itemType="Shoes"), # Fawn Brown Woodchucks with White Trim
 
-                    ShopItem(itemId=478, price=25, goldPrice=5, color1=126, color2=208, itemType="Shirt"), # Raindrop Blue Splish-Splash Tank
-                    ShopItem(itemId=1394, price=25, goldPrice=5, color1=126, color2=208, itemType="Skirt"), # Raindrop Blue Splish-Splash Shorts
-                    ShopItem(itemId=3604, price=15, goldPrice=3, color1=208, color2=126, itemType="Shoes"), # Cerulean Blue Tick Tock
+                    ShopItem(itemId=478, price=45, goldPrice=16, color1=126, color2=208, itemType="Shirt"), # Raindrop Blue Splish-Splash Tank
+                    ShopItem(itemId=1394, price=45, goldPrice=16, color1=126, color2=208, itemType="Skirt"), # Raindrop Blue Splish-Splash Shorts
+                    ShopItem(itemId=3604, price=25, goldPrice=10, color1=208, color2=126, itemType="Shoes"), # Cerulean Blue Tick Tock
 
-                    ShopItem(itemId=286, price=25, goldPrice=5, color1=162, color2=161, itemType="Shirt"), # Sunglow Yellow Plenty Plaid Top
-                    ShopItem(itemId=1133, price=25, goldPrice=5, color1=161, color2=161, itemType="Skirt"), # Buried Treasure Brown Cuffed Leaf Shorts
-                    ShopItem(itemId=3671, price=15, goldPrice=3, color1=161, color2=162, itemType="Shoes"), # Buried Treasure Brown Plenty Plaid Deck Shoes
+                    ShopItem(itemId=286, price=45, goldPrice=16, color1=162, color2=161, itemType="Shirt"), # Sunglow Yellow Plenty Plaid Top
+                    ShopItem(itemId=1133, price=45, goldPrice=16, color1=161, color2=161, itemType="Skirt"), # Buried Treasure Brown Cuffed Leaf Shorts
+                    ShopItem(itemId=3671, price=25, goldPrice=10, color1=161, color2=162, itemType="Shoes"), # Buried Treasure Brown Plenty Plaid Deck Shoes
 
-                    ShopItem(itemId=244, price=25, goldPrice=5, color1=166, color2=206, itemType="Shirt"), # Snow White Best Dressed Suspenders
-                    ShopItem(itemId=1204, price=25, goldPrice=5, color1=209, color2=209, itemType="Skirt"), # Deep Sea Blue Best Dressed Slacks
-                    ShopItem(itemId=3641, price=15, goldPrice=3, color1=206, color2=206, itemType="Shoes"), # Raven Black Best Dressed Loafers
+                    ShopItem(itemId=244, price=45, goldPrice=16, color1=166, color2=206, itemType="Shirt"), # Snow White Best Dressed Suspenders
+                    ShopItem(itemId=1204, price=45, goldPrice=16, color1=209, color2=209, itemType="Skirt"), # Deep Sea Blue Best Dressed Slacks
+                    ShopItem(itemId=3641, price=25, goldPrice=10, color1=206, color2=206, itemType="Shoes"), # Raven Black Best Dressed Loafers
 
-                    ShopItem(itemId=2155, price=15, goldPrice=3, color1=27, color2=75, itemType="HeadItem"), # Corn Cob Yellow Sparrow Snow Cap
-                    ShopItem(itemId=2578, price=5, goldPrice=1, color1=27, color2=27, itemType="Necklace"), # Corn Cob Yellow Twisty Winter Warmer
-                    ShopItem(itemId=304, price=25, goldPrice=5, color1=75, color2=27, itemType="Shirt"), # Umber Brown Snowbound Ski Jacket
-                    ShopItem(itemId=1592, price=10, goldPrice=2, color1=93, color2=27, itemType="WristItem"), # Maple Brown Ski Poles
-                    ShopItem(itemId=1254, price=25, goldPrice=5, color1=75, color2=27, itemType="Skirt"), # Umber Brown Warm Ski Pants
-                    ShopItem(itemId=3677, price=15, goldPrice=3, color1=93, color2=27, itemType="Shoes"), # Maple Brown Swift Skis
+                    ShopItem(itemId=2155, price=25, goldPrice=10, color1=27, color2=75, itemType="HeadItem"), # Corn Cob Yellow Sparrow Snow Cap
+                    ShopItem(itemId=2578, price=15, goldPrice=6, color1=27, color2=27, itemType="Necklace"), # Corn Cob Yellow Twisty Winter Warmer
+                    ShopItem(itemId=304, price=45, goldPrice=16, color1=75, color2=27, itemType="Shirt"), # Umber Brown Snowbound Ski Jacket
+                    ShopItem(itemId=1592, price=15, goldPrice=6, color1=93, color2=27, itemType="WristItem"), # Maple Brown Ski Poles
+                    ShopItem(itemId=1254, price=45, goldPrice=16, color1=75, color2=27, itemType="Skirt"), # Umber Brown Warm Ski Pants
+                    ShopItem(itemId=3677, price=25, goldPrice=10, color1=93, color2=27, itemType="Shoes"), # Maple Brown Swift Skis
 
-                    ShopItem(itemId=222, price=25, goldPrice=5, color1=224, color2=3, itemType="Shirt"), # Ivory White Scholarly Vest
-                    ShopItem(itemId=1172, price=25, goldPrice=5, color1=91, color2=91, itemType="Skirt"), # Coconut Brown Dry Leaf Trousers
-                    ShopItem(itemId=3588, price=15, goldPrice=3, color1=74, color2=236, itemType="Shoes"), # Soil Brown Bark Layer Shoes
+                    ShopItem(itemId=222, price=45, goldPrice=16, color1=224, color2=3, itemType="Shirt"), # Ivory White Scholarly Vest
+                    ShopItem(itemId=1172, price=45, goldPrice=16, color1=91, color2=91, itemType="Skirt"), # Coconut Brown Dry Leaf Trousers
+                    ShopItem(itemId=3588, price=25, goldPrice=10, color1=74, color2=236, itemType="Shoes"), # Soil Brown Bark Layer Shoes
 
-                    ShopItem(itemId=220, price=25, goldPrice=5, color1=60, color2=129, itemType="Shirt"), # Tyrian Purple Simple Cardie with Purple Trim
-                    ShopItem(itemId=1145, price=25, goldPrice=5, color1=118, color2=118, itemType="Skirt"), # Sapphire Blue Denim Flyers
-                    ShopItem(itemId=3587, price=15, goldPrice=3, color1=141, color2=141, itemType="Shoes"), # Thundercloud Gray Bark Sole Dress Shoes
+                    ShopItem(itemId=220, price=45, goldPrice=16, color1=60, color2=129, itemType="Shirt"), # Tyrian Purple Simple Cardie with Purple Trim
+                    ShopItem(itemId=1145, price=45, goldPrice=16, color1=118, color2=118, itemType="Skirt"), # Sapphire Blue Denim Flyers
+                    ShopItem(itemId=3587, price=25, goldPrice=10, color1=141, color2=141, itemType="Shoes"), # Thundercloud Gray Bark Sole Dress Shoes
 
-                    ShopItem(itemId=268, price=25, goldPrice=5, color1=113, color2=161, itemType="Shirt"), # Pale Rose Red Easy Style Henley with Buried Treasure Brown Trim
-                    ShopItem(itemId=1217, price=25, goldPrice=5, color1=161, color2=161, itemType="Skirt"), # Buried Treasure Brown Easy Style Jeans
-                    ShopItem(itemId=3654, price=15, goldPrice=3, color1=78, color2=161, itemType="Shoes"), # Fawn Brown Easy Style Sneaks
+                    ShopItem(itemId=268, price=45, goldPrice=16, color1=113, color2=161, itemType="Shirt"), # Pale Rose Red Easy Style Henley with Buried Treasure Brown Trim
+                    ShopItem(itemId=1217, price=45, goldPrice=16, color1=161, color2=161, itemType="Skirt"), # Buried Treasure Brown Easy Style Jeans
+                    ShopItem(itemId=3654, price=25, goldPrice=10, color1=78, color2=161, itemType="Shoes"), # Fawn Brown Easy Style Sneaks
 
-                    ShopItem(itemId=2330, price=15, goldPrice=3, color1=206, color2=206, itemType="HeadItem"), # Raven Black Keen Comb
-                    ShopItem(itemId=407, price=25, goldPrice=5, color1=206, color2=166, itemType="Shirt"), # Raven Black Sock Hop Jacket
-                    ShopItem(itemId=1330, price=25, goldPrice=5, color1=118, color2=118, itemType="Skirt"), # Sapphire Blue Sock Hop Pants
-                    ShopItem(itemId=3749, price=15, goldPrice=3, color1=206, color2=166, itemType="Shoes"), # Raven Black Cool Moto Boots
+                    ShopItem(itemId=2330, price=25, goldPrice=10, color1=206, color2=206, itemType="HeadItem"), # Raven Black Keen Comb
+                    ShopItem(itemId=407, price=45, goldPrice=16, color1=206, color2=166, itemType="Shirt"), # Raven Black Sock Hop Jacket
+                    ShopItem(itemId=1330, price=45, goldPrice=16, color1=118, color2=118, itemType="Skirt"), # Sapphire Blue Sock Hop Pants
+                    ShopItem(itemId=3749, price=25, goldPrice=10, color1=206, color2=166, itemType="Shoes"), # Raven Black Cool Moto Boots
 
-                    ShopItem(itemId=277, price=25, goldPrice=5, color1=172, color2=122, itemType="Shirt"), # Forest Green Cool Breeze Roll-Up Top
-                    ShopItem(itemId=1227, price=25, goldPrice=5, color1=118, color2=206, itemType="Skirt"), # Sapphire Blue Breezy Casual Shorts
-                    ShopItem(itemId=3625, price=15, goldPrice=3, color1=78, color2=236, itemType="Shoes"), # Fawn Brown Woodchucks with Tan Trim
+                    ShopItem(itemId=277, price=45, goldPrice=16, color1=172, color2=122, itemType="Shirt"), # Forest Green Cool Breeze Roll-Up Top
+                    ShopItem(itemId=1227, price=45, goldPrice=16, color1=118, color2=206, itemType="Skirt"), # Sapphire Blue Breezy Casual Shorts
+                    ShopItem(itemId=3625, price=25, goldPrice=10, color1=78, color2=236, itemType="Shoes"), # Fawn Brown Woodchucks with Tan Trim
 
-                    ShopItem(itemId=2326, price=15, goldPrice=3, color1=224, color2=141, itemType="HeadItem"), # Ivory White Too Cool Hat
-                    ShopItem(itemId=406, price=25, goldPrice=5, color1=224, color2=141, itemType="Shirt"), # Ivory White Hip Zip Sweater
-                    ShopItem(itemId=1311, price=25, goldPrice=5, color1=141, color2=141, itemType="Skirt"), # Thundercloud Gray Neat and Trim Trousers
-                    ShopItem(itemId=3714, price=15, goldPrice=3, color1=141, color2=224, itemType="Shoes"), # Thundercloud Gray Fast-Flying Sneakers
+                    ShopItem(itemId=2326, price=25, goldPrice=10, color1=224, color2=141, itemType="HeadItem"), # Ivory White Too Cool Hat
+                    ShopItem(itemId=406, price=45, goldPrice=16, color1=224, color2=141, itemType="Shirt"), # Ivory White Hip Zip Sweater
+                    ShopItem(itemId=1311, price=45, goldPrice=16, color1=141, color2=141, itemType="Skirt"), # Thundercloud Gray Neat and Trim Trousers
+                    ShopItem(itemId=3714, price=25, goldPrice=10, color1=141, color2=224, itemType="Shoes"), # Thundercloud Gray Fast-Flying Sneakers
 
-                    ShopItem(itemId=287, price=25, goldPrice=5, color1=208, color2=267, itemType="Shirt"), # Cerulean Blue Beach Breezy Top
-                    ShopItem(itemId=1239, price=25, goldPrice=5, color1=209, color2=209, itemType="Skirt"), # Deep Sea Blue Beach Breezy Shorts
-                    ShopItem(itemId=3672, price=15, goldPrice=3, color1=141, color2=141, itemType="Shoes"), # Thundercloud Gray Easy Walker
+                    ShopItem(itemId=287, price=45, goldPrice=16, color1=208, color2=267, itemType="Shirt"), # Cerulean Blue Beach Breezy Top
+                    ShopItem(itemId=1239, price=45, goldPrice=16, color1=209, color2=209, itemType="Skirt"), # Deep Sea Blue Beach Breezy Shorts
+                    ShopItem(itemId=3672, price=25, goldPrice=10, color1=141, color2=141, itemType="Shoes"), # Thundercloud Gray Easy Walker
 
-                    ShopItem(itemId=285, price=25, goldPrice=5, color1=63, color2=166, itemType="Shirt"), # Butterfly Blue Casual Flyer Coat
-                    ShopItem(itemId=1238, price=25, goldPrice=5, color1=63, color2=63, itemType="Skirt"), # Butterfly Blue Casual Flyer Pants
-                    ShopItem(itemId=3670, price=15, goldPrice=3, color1=63, color2=166, itemType="Shoes"), # Butterfly Blue Casual Flyer Shoes
+                    ShopItem(itemId=285, price=45, goldPrice=16, color1=63, color2=166, itemType="Shirt"), # Butterfly Blue Casual Flyer Coat
+                    ShopItem(itemId=1238, price=45, goldPrice=16, color1=63, color2=63, itemType="Skirt"), # Butterfly Blue Casual Flyer Pants
+                    ShopItem(itemId=3670, price=25, goldPrice=10, color1=63, color2=166, itemType="Shoes"), # Butterfly Blue Casual Flyer Shoes
 
-                    ShopItem(itemId=299, price=25, goldPrice=5, color1=166, color2=169, itemType="Shirt"), # Snow White Polished Pinstripe Vest with Squirrel Gray Trim
-                    ShopItem(itemId=1249, price=25, goldPrice=5, color1=169, color2=169, itemType="Skirt"), # Squirrel Gray Polished Pinstripe Pants
-                    ShopItem(itemId=3679, price=15, goldPrice=3, color1=141, color2=169, itemType="Shoes"), # Thundercloud Gray Luxurious Lace-Ups
+                    ShopItem(itemId=299, price=45, goldPrice=16, color1=166, color2=169, itemType="Shirt"), # Snow White Polished Pinstripe Vest with Squirrel Gray Trim
+                    ShopItem(itemId=1249, price=45, goldPrice=16, color1=169, color2=169, itemType="Skirt"), # Squirrel Gray Polished Pinstripe Pants
+                    ShopItem(itemId=3679, price=25, goldPrice=10, color1=141, color2=169, itemType="Shoes"), # Thundercloud Gray Luxurious Lace-Ups
 
-                    ShopItem(itemId=218, price=25, goldPrice=5, color1=60, color2=60, itemType="Shirt"), # Tyrian Purple Rain Hoodie
-                    ShopItem(itemId=1131, price=25, goldPrice=5, color1=78, color2=78, itemType="Skirt"), # Fawn Brown Tailored Leaf Jeans
-                    ShopItem(itemId=3627, price=15, goldPrice=3, color1=78, color2=78, itemType="Shoes"), #  Fawn Brown Sturdy Galoshes
+                    ShopItem(itemId=218, price=45, goldPrice=16, color1=60, color2=60, itemType="Shirt"), # Tyrian Purple Rain Hoodie
+                    ShopItem(itemId=1131, price=45, goldPrice=16, color1=78, color2=78, itemType="Skirt"), # Fawn Brown Tailored Leaf Jeans
+                    ShopItem(itemId=3627, price=25, goldPrice=10, color1=78, color2=78, itemType="Shoes"), #  Fawn Brown Sturdy Galoshes
 
-                    ShopItem(itemId=147, price=25, goldPrice=5, color1=127, color2=17, itemType="Shirt"), # Grasshopper Green Sporty Top
-                    ShopItem(itemId=1193, price=25, goldPrice=5, color1=127, color2=127, itemType="Skirt"), # Grasshopper Green Sporty Shorts
-                    ShopItem(itemId=3633, price=15, goldPrice=3, color1=78, color2=78, itemType="Shoes"), # Fawn Brown Sporty Shoes
+                    ShopItem(itemId=147, price=45, goldPrice=16, color1=127, color2=17, itemType="Shirt"), # Grasshopper Green Sporty Top
+                    ShopItem(itemId=1193, price=45, goldPrice=16, color1=127, color2=127, itemType="Skirt"), # Grasshopper Green Sporty Shorts
+                    ShopItem(itemId=3633, price=25, goldPrice=10, color1=78, color2=78, itemType="Shoes"), # Fawn Brown Sporty Shoes
                 
                 ],
             ),
@@ -1159,87 +1159,88 @@ SHOPS = [
                 collectionId=56, # Themed Fashions
                 currencyId=FairiesConstants.MAPLE_LEAVES,
                 items=[
-                    ShopItem(itemId=2294, price=15, goldPrice=3, color1=154, color2=45, itemType="HeadItem"), # Beetle Brown Gardening Hat
-                    ShopItem(itemId=380, price=25, goldPrice=5, color1=118, color2=45, itemType="Shirt"), # Sapphire Blue Gardening Overall Top
-                    ShopItem(itemId=1298, price=25, goldPrice=5, color1=209, color2=141, itemType="Skirt"), # Deep Sea Blue Gardening Jeans
-                    ShopItem(itemId=3627, price=15, goldPrice=3, color1=141, color2=214, itemType="Shoes"), # Thundercloud Gray Sturdy Galoshes with Gray Trim
+                    ShopItem(itemId=2294, price=25, goldPrice=10, color1=154, color2=45, itemType="HeadItem"), # Beetle Brown Gardening Hat
+                    ShopItem(itemId=380, price=45, goldPrice=16, color1=118, color2=45, itemType="Shirt"), # Sapphire Blue Gardening Overall Top
+                    ShopItem(itemId=1298, price=45, goldPrice=16, color1=209, color2=141, itemType="Skirt"), # Deep Sea Blue Gardening Jeans
+                    ShopItem(itemId=3627, price=25, goldPrice=10, color1=141, color2=214, itemType="Shoes"), # Thundercloud Gray Sturdy Galoshes with Gray Trim
 
-                    ShopItem(itemId=2275, price=15, goldPrice=3, color1=239, color2=216, itemType="HeadItem"), # Coffee Black Ninja Hood
-                    ShopItem(itemId=336, price=25, goldPrice=5, color1=239, color2=216, itemType="Shirt"), # Coffee Black Ninja Shinobi Top
-                    ShopItem(itemId=1272, price=25, goldPrice=5, color1=239, color2=216, itemType="Skirt"), # Coffee Black Ninja Shinobi Pants
-                    ShopItem(itemId=3697, price=15, goldPrice=3, color1=239, color2=141, itemType="Shoes"), #  Coffee Black Ninja Tabi Shoes
+                    ShopItem(itemId=2275, price=25, goldPrice=10, color1=239, color2=216, itemType="HeadItem"), # Coffee Black Ninja Hood
+                    ShopItem(itemId=336, price=45, goldPrice=16, color1=239, color2=216, itemType="Shirt"), # Coffee Black Ninja Shinobi Top
+                    ShopItem(itemId=1272, price=45, goldPrice=16, color1=239, color2=216, itemType="Skirt"), # Coffee Black Ninja Shinobi Pants
+                    ShopItem(itemId=3697, price=25, goldPrice=10, color1=239, color2=141, itemType="Shoes"), #  Coffee Black Ninja Tabi Shoes
 
-                    ShopItem(itemId=2297, price=15, goldPrice=3, color1=239, color2=168, itemType="HeadItem"), # Coffee Black Folklorico Hat
-                    ShopItem(itemId=381, price=25, goldPrice=5, color1=239, color2=168, itemType="Shirt"), # Coffee Black Folklorico Jacket
-                    ShopItem(itemId=1301, price=25, goldPrice=5, color1=239, color2=168, itemType="Skirt"), # Coffee Black Folklorico Trousers
-                    ShopItem(itemId=3719, price=15, goldPrice=3, color1=239, color2=168, itemType="Shoes"), # Coffee Black Folklorico Shoes
+                    ShopItem(itemId=2297, price=25, goldPrice=10, color1=239, color2=168, itemType="HeadItem"), # Coffee Black Folklorico Hat
+                    ShopItem(itemId=381, price=45, goldPrice=16, color1=239, color2=168, itemType="Shirt"), # Coffee Black Folklorico Jacket
+                    ShopItem(itemId=1301, price=45, goldPrice=16, color1=239, color2=168, itemType="Skirt"), # Coffee Black Folklorico Trousers
+                    ShopItem(itemId=3719, price=25, goldPrice=10, color1=239, color2=168, itemType="Shoes"), # Coffee Black Folklorico Shoes
 
-                    ShopItem(itemId=352, price=25, goldPrice=5, color1=206, color2=236, itemType="Shirt"), #  Raven Black Woodsman Top
-                    ShopItem(itemId=633, price=5, goldPrice=1, color1=206, color2=245, itemType="Belt"), # Raven Black Woodsman's Belt
-                    ShopItem(itemId=1287, price=25, goldPrice=5, color1=239, color2=239, itemType="Skirt"), # Coffee Black Woodsman Trousers
-                    ShopItem(itemId=3712, price=15, goldPrice=3, color1=239, color2=239, itemType="Shoes"), # Coffee Black Woodsman Boots
+                    ShopItem(itemId=352, price=45, goldPrice=16, color1=206, color2=236, itemType="Shirt"), #  Raven Black Woodsman Top
+                    ShopItem(itemId=633, price=15, goldPrice=6, color1=206, color2=245, itemType="Belt"), # Raven Black Woodsman's Belt
+                    ShopItem(itemId=1287, price=45, goldPrice=16, color1=239, color2=239, itemType="Skirt"), # Coffee Black Woodsman Trousers
+                    ShopItem(itemId=3712, price=25, goldPrice=10, color1=239, color2=239, itemType="Shoes"), # Coffee Black Woodsman Boots
 
-                    ShopItem(itemId=2157, price=15, goldPrice=3, color1=224, color2=224, itemType="HeadItem"), # Ivory White Baking Hat
-                    ShopItem(itemId=189, price=25, goldPrice=5, color1=171, color2=224, itemType="Shirt"), # Sunrise Yellow Chef's Jacket
-                    ShopItem(itemId=1171, price=25, goldPrice=5, color1=224, color2=224, itemType="Skirt"), # Ivory White Chef's Apron Pants
-                    ShopItem(itemId=3592, price=15, goldPrice=3, color1=75, color2=75, itemType="Shoes"), # Umber Brown Round Toe Shoes
+                    ShopItem(itemId=2157, price=25, goldPrice=10, color1=224, color2=224, itemType="HeadItem"), # Ivory White Baking Hat
+                    ShopItem(itemId=189, price=45, goldPrice=16, color1=171, color2=224, itemType="Shirt"), # Sunrise Yellow Chef's Jacket
+                    ShopItem(itemId=1171, price=45, goldPrice=16, color1=224, color2=224, itemType="Skirt"), # Ivory White Chef's Apron Pants
+                    ShopItem(itemId=3592, price=25, goldPrice=10, color1=75, color2=75, itemType="Shoes"), # Umber Brown Round Toe Shoes
 
-                    ShopItem(itemId=2184, price=15, goldPrice=3, color1=224, color2=105, itemType="HeadItem"), # Ivory White Serving-Talent Hat
-                    ShopItem(itemId=237, price=25, goldPrice=5, color1=224, color2=105, itemType="Shirt"), # Ivory White Serving-Talent Vest
-                    ShopItem(itemId=1172, price=25, goldPrice=5, color1=118, color2=118, itemType="Skirt"), # Sapphire Blue Dry Leaf Trousers
-                    ShopItem(itemId=3623, price=15, goldPrice=3, color1=141, color2=206, itemType="Shoes"), # Thundercloud Gray Later Skaters with Black Trim
+                    ShopItem(itemId=2184, price=25, goldPrice=10, color1=224, color2=105, itemType="HeadItem"), # Ivory White Serving-Talent Hat
+                    ShopItem(itemId=237, price=45, goldPrice=16, color1=224, color2=105, itemType="Shirt"), # Ivory White Serving-Talent Vest
+                    ShopItem(itemId=1172, price=45, goldPrice=16, color1=118, color2=118, itemType="Skirt"), # Sapphire Blue Dry Leaf Trousers
+                    ShopItem(itemId=3623, price=25, goldPrice=10, color1=141, color2=206, itemType="Shoes"), # Thundercloud Gray Later Skaters with Black Trim
 
-                    ShopItem(itemId=2179, price=15, goldPrice=3, color1=209, color2=180, itemType="HeadItem"), # Deep Sea Blue Teatime Top Hat
-                    ShopItem(itemId=2569, price=2, goldPrice=1, color1=209, color2=209, itemType="Necklace"), # Deep Sea Blue Mad Tea Party Scarf
-                    ShopItem(itemId=247, price=25, goldPrice=5, color1=209, color2=180, itemType="Shirt"), # Deep Sea Blue Mad Tea Party Attire
-                    ShopItem(itemId=1204, price=25, goldPrice=5, color1=185, color2=180, itemType="Skirt"), # Midnight Blue Best Dressed Slacks
-                    ShopItem(itemId=3641, price=15, goldPrice=3, color1=209, color2=180, itemType="Shoes"), # Deep Sea Blue Best Dressed Loafers
+                    ShopItem(itemId=2179, price=25, goldPrice=10, color1=209, color2=180, itemType="HeadItem"), # Deep Sea Blue Teatime Top Hat
+                    ShopItem(itemId=2569, price=15, goldPrice=6, color1=209, color2=209, itemType="Necklace"), # Deep Sea Blue Mad Tea Party Scarf
+                    ShopItem(itemId=247, price=45, goldPrice=16, color1=209, color2=180, itemType="Shirt"), # Deep Sea Blue Mad Tea Party Attire
+                    ShopItem(itemId=1204, price=45, goldPrice=16, color1=185, color2=180, itemType="Skirt"), # Midnight Blue Best Dressed Slacks
+                    ShopItem(itemId=3641, price=25, goldPrice=10, color1=209, color2=180, itemType="Shoes"), # Deep Sea Blue Best Dressed Loafers
 
-                    ShopItem(itemId=2588, price=2, goldPrice=1, color1=227, color2=227, itemType="Necklace"), # Moonlight Gray Top 40 Necklace
-                    ShopItem(itemId=335, price=25, goldPrice=5, color1=224, color2=224, itemType="Shirt"), # Ivory White Top 40 Vest
-                    ShopItem(itemId=1608, price=2, goldPrice=1, color1=230, color2=230, itemType="WristItem"), # Scarlet Red Top 40 Wrist Cuff
-                    ShopItem(itemId=1132, price=25, goldPrice=5, color1=209, color2=209, itemType="Skirt"), # Deep Sea Blue Tailored Spider Silk Jeans
-                    ShopItem(itemId=3633, price=15, goldPrice=3, color1=206, color2=206, itemType="Shoes"), # Raven Black Sporty Shoes
+                    ShopItem(itemId=2588, price=15, goldPrice=6, color1=227, color2=151, itemType="Necklace"), # Moonlight Gray Top 40 Necklace
+                    ShopItem(itemId=335, price=45, goldPrice=16, color1=224, color2=230, itemType="Shirt"), # Ivory White Top 40 Vest
+                    ShopItem(itemId=1608, price=15, goldPrice=6, color1=230, color2=227, itemType="WristItem"), # Scarlet Red Top 40 Wrist Cuff
+                    ShopItem(itemId=1132, price=45, goldPrice=16, color1=209, color2=209, itemType="Skirt"), # Deep Sea Blue Tailored Spider Silk Jeans
+                    ShopItem(itemId=3633, price=25, goldPrice=10, color1=206, color2=206, itemType="Shoes"), # Raven Black Sporty Shoes
 
-                    ShopItem(itemId=2287, price=15, goldPrice=3, color1=92, color2=92, itemType="HeadItem"), # Hawk Brown Rockin' Hair
-                    ShopItem(itemId=2592, price=5, goldPrice=1, color1=169, color2=169, itemType="Necklace"), # Squirrel Gray Rockin' Necklace
-                    ShopItem(itemId=349, price=25, goldPrice=5, color1=55, color2=55, itemType="Shirt"), # Pepper Black Rockin' Jacket
-                    ShopItem(itemId=632, price=5, goldPrice=1, color1=45, color2=45, itemType="Belt"), # Strawberry Red Rockin' Belt
-                    ShopItem(itemId=1285, price=25, goldPrice=5, color1=141, color2=141, itemType="Skirt"), # Thundercloud Gray Rockin' Pants
-                    ShopItem(itemId=3709, price=15, goldPrice=3, color1=55, color2=55, itemType="Shoes"), # Pepper Black Rockin' Boots
+                    ShopItem(itemId=2287, price=25, goldPrice=10, color1=92, color2=286, itemType="HeadItem"), # Hawk Brown Rockin' Hair
+                    ShopItem(itemId=2592, price=15, goldPrice=6, color1=169, color2=166, itemType="Necklace"), # Squirrel Gray Rockin' Necklace
+                    ShopItem(itemId=349, price=45, goldPrice=16, color1=55, color2=166, itemType="Shirt"), # Pepper Black Rockin' Jacket
+                    ShopItem(itemId=632, price=15, goldPrice=6, color1=45, color2=45, itemType="Belt"), # Strawberry Red Rockin' Belt
+                    ShopItem(itemId=1285, price=45, goldPrice=16, color1=141, color2=141, itemType="Skirt"), # Thundercloud Gray Rockin' Pants
+                    ShopItem(itemId=3709, price=25, goldPrice=10, color1=55, color2=166, itemType="Shoes"), # Pepper Black Rockin' Boots
 
-                    ShopItem(itemId=351, price=25, goldPrice=5, color1=206, color2=206, itemType="Shirt"), # Raven Black Glitz and Glam Top
-                    ShopItem(itemId=1297, price=25, goldPrice=5, color1=226, color2=226, itemType="Skirt"), # Goldenrod Yellow Glitz and Glam Pants
-                    ShopItem(itemId=3711, price=15, goldPrice=3, color1=206, color2=206, itemType="Shoes"), # Raven Black Glitz and Glam Boots
+                    ShopItem(itemId=351, price=45, goldPrice=16, color1=206, color2=226, itemType="Shirt"), # Raven Black Glitz and Glam Top
+                    ShopItem(itemId=1297, price=45, goldPrice=16, color1=226, color2=206, itemType="Skirt"), # Goldenrod Yellow Glitz and Glam Pants
+                    ShopItem(itemId=3711, price=25, goldPrice=10, color1=206, color2=226, itemType="Shoes"), # Raven Black Glitz and Glam Boots
 
-                    ShopItem(itemId=324, price=25, goldPrice=5, color1=116, color2=116, itemType="Shirt"), # Mushroom White Royal Jacket
-                    ShopItem(itemId=1262, price=25, goldPrice=5, color1=26, color2=26, itemType="Skirt"), # Raspberry Red Princely Trousers
-                    ShopItem(itemId=3683, price=15, goldPrice=3, color1=141, color2=141, itemType="Shoes"), # Thundercloud Gray Princely Boots
+                    ShopItem(itemId=324, price=45, goldPrice=16, color1=116, color2=248, itemType="Shirt"), # Mushroom White Royal Jacket
+                    ShopItem(itemId=1262, price=45, goldPrice=16, color1=26, color2=26, itemType="Skirt"), # Raspberry Red Princely Trousers
+                    ShopItem(itemId=3683, price=25, goldPrice=10, color1=141, color2=141, itemType="Shoes"), # Thundercloud Gray Princely Boots
 
-                    ShopItem(itemId=337, price=25, goldPrice=5, color1=170, color2=170, itemType="Shirt"), # Olive Green Agave Top
-                    ShopItem(itemId=1610, price=10, goldPrice=2, color1=170, color2=170, itemType="WristItem"), # Olive Green Agave Cuff
-                    ShopItem(itemId=1273, price=25, goldPrice=5, color1=170, color2=170, itemType="Skirt"), # Olive Green Agave Shorts
-                    ShopItem(itemId=3698, price=15, goldPrice=3, color1=170, color2=170, itemType="Shoes"), # Olive Green Agave Shoes
+                    ShopItem(itemId=337, price=45, goldPrice=16, color1=170, color2=159, itemType="Shirt"), # Olive Green Agave Top
+                    ShopItem(itemId=1610, price=10, goldPrice=6, color1=170, color2=170, itemType="WristItem"), # Olive Green Agave Cuff
+                    ShopItem(itemId=1273, price=45, goldPrice=16, color1=170, color2=159, itemType="Skirt"), # Olive Green Agave Shorts
+                    ShopItem(itemId=3698, price=25, goldPrice=10, color1=170, color2=159, itemType="Shoes"), # Olive Green Agave Shoes
 
-                    ShopItem(itemId=2131, price=15, goldPrice=3, color1=206, color2=206, itemType="HeadItem"), # Raven Black Camp Referee Visor
-                    ShopItem(itemId=146, price=25, goldPrice=5, color1=166, color2=166, itemType="Shirt"), # Snow White Camp Referee Top
-                    ShopItem(itemId=1137, price=25, goldPrice=5, color1=166, color2=166, itemType="Skirt"), # Snow White Camp Referee Shorts
-                    ShopItem(itemId=3597, price=15, goldPrice=3, color1=206, color2=206, itemType="Shoes"), # Raven Black Camp Referee Shoes
+                    ShopItem(itemId=2131, price=25, goldPrice=10, color1=206, color2=206, itemType="HeadItem"), # Raven Black Camp Referee Visor
+                    ShopItem(itemId=146, price=45, goldPrice=16, color1=166, color2=206, itemType="Shirt"), # Snow White Camp Referee Top
+                    ShopItem(itemId=1137, price=45, goldPrice=16, color1=166, color2=206, itemType="Skirt"), # Snow White Camp Referee Shorts
+                    ShopItem(itemId=3597, price=25, goldPrice=10, color1=206, color2=166, itemType="Shoes"), # Raven Black Camp Referee Shoes
 
-                    ShopItem(itemId=361, price=25, goldPrice=5, color1=183, color2=183, itemType="Shirt"), # Vidia Purple Fast-Flying Tee
-                    ShopItem(itemId=1291, price=25, goldPrice=5, color1=183, color2=183, itemType="Skirt"), # Vidia Purple Fast-Flying Pants
-                    ShopItem(itemId=3714, price=15, goldPrice=3, color1=60, color2=60, itemType="Shoes"), # Tyrian Purple Fast-Flying Sneakers
+                    ShopItem(itemId=361, price=45, goldPrice=16, color1=183, color2=60, itemType="Shirt"), # Vidia Purple Fast-Flying Tee
+                    ShopItem(itemId=1291, price=45, goldPrice=16, color1=183, color2=183, itemType="Skirt"), # Vidia Purple Fast-Flying Pants
+                    ShopItem(itemId=3714, price=25, goldPrice=10, color1=60, color2=60, itemType="Shoes"), # Tyrian Purple Fast-Flying Sneakers
 
-                    ShopItem(itemId=2290, price=15, goldPrice=3, color1=60, color2=60, itemType="HeadItem"), # Tyrian Purple Fast-Flying Headband
-                    ShopItem(itemId=362, price=25, goldPrice=5, color1=183, color2=183, itemType="Shirt"), # Vidia Purple Fast-Flying Tunic
-                    ShopItem(itemId=634, price=5, goldPrice=1, color1=183, color2=183, itemType="Belt"), # Vidia Purple Fast-Flying Belt
-                    ShopItem(itemId=1292, price=25, goldPrice=5, color1=183, color2=183, itemType="Skirt"), # Vidia Purple Fast-Flying Pants
-                    ShopItem(itemId=3715, price=15, goldPrice=3, color1=183, color2=183, itemType="Shoes"), # Vidia Purple Fast-Flying Laceups
+                    ShopItem(itemId=2290, price=25, goldPrice=10, color1=60, color2=183, itemType="HeadItem"), # Tyrian Purple Fast-Flying Headband
+                    ShopItem(itemId=362, price=45, goldPrice=16, color1=183, color2=60, itemType="Shirt"), # Vidia Purple Fast-Flying Tunic
+                    ShopItem(itemId=634, price=15, goldPrice=6, color1=183, color2=60, itemType="Belt"), # Vidia Purple Fast-Flying Belt
+                    ShopItem(itemId=1292, price=45, goldPrice=16, color1=183, color2=60, itemType="Skirt"), # Vidia Purple Fast-Flying Pants
+                    ShopItem(itemId=3715, price=25, goldPrice=10, color1=183, color2=60, itemType="Shoes"), # Vidia Purple Fast-Flying Laceups
 
-                    ShopItem(itemId=2276, price=15, goldPrice=3, color1=166, color2=166, itemType="HeadItem"), # Snow White Wacky Rainbow Wig
-                    ShopItem(itemId=131, price=25, goldPrice=5, color1=226, color2=226, itemType="Shirt"), # Goldenrod Yellow Cap Sleeve Meadow Tee
-                    ShopItem(itemId=1288, price=25, goldPrice=5, color1=228, color2=228, itemType="Skirt"), # Duckbill Orange Silly Parachute Pants
-                    ShopItem(itemId=3713, price=15, goldPrice=3, color1=226, color2=226, itemType="Shoes"), # Goldenrod Yellow Polka-Stripe Socks
+                    ShopItem(itemId=2276, price=25, goldPrice=10, color1=166, color2=166, itemType="HeadItem"), # Snow White Wacky Rainbow Wig
+                    ShopItem(itemId=131, price=45, goldPrice=16, color1=226, color2=228, itemType="Shirt"), # Goldenrod Yellow Cap Sleeve Meadow Tee
+                    ShopItem(itemId=1288, price=45, goldPrice=16, color1=228, color2=228, itemType="Skirt"), # Duckbill Orange Silly Parachute Pants
+                    ShopItem(itemId=3713, price=25, goldPrice=10, color1=226, color2=226, itemType="Shoes"), # Goldenrod Yellow Polka-Stripe Socks
+
 
                 ]
             ),
@@ -1247,142 +1248,142 @@ SHOPS = [
                  collectionId=58, # Animal Friend Costumes
                  currencyId=FairiesConstants.MAPLE_LEAVES,
                  items=[
-                    ShopItem(itemId=2073, price=15, goldPrice=3, color1=206, color2=142, itemType="HeadItem"), # Raven Black Buzzy Bee Mask
-                    ShopItem(itemId=230, price=25, goldPrice=5, color1=142, color2=206, itemType="Shirt"), # Bumble Bee Yellow Buzzy Bee Top
-                    ShopItem(itemId=1170, price=25, goldPrice=5, color1=206, color2=206, itemType="Skirt"), # Raven Black Pocket Pants
-                    ShopItem(itemId=3577, price=15, goldPrice=3, color1=206, color2=206, itemType="Shoes"), # Raven Black Ivy Lace Work Boots
+                    ShopItem(itemId=2073, price=25, goldPrice=10, color1=206, color2=142, itemType="HeadItem"), # Raven Black Buzzy Bee Mask
+                    ShopItem(itemId=230, price=45, goldPrice=16, color1=142, color2=206, itemType="Shirt"), # Bumble Bee Yellow Buzzy Bee Top
+                    ShopItem(itemId=1170, price=45, goldPrice=16, color1=206, color2=206, itemType="Skirt"), # Raven Black Pocket Pants
+                    ShopItem(itemId=3577, price=25, goldPrice=10, color1=206, color2=206, itemType="Shoes"), # Raven Black Ivy Lace Work Boots
 
-                    ShopItem(itemId=2071, price=15, goldPrice=3, color1=44, color2=190, itemType="HeadItem"), # Plumblossom Pink Little Light Antennae
-                    ShopItem(itemId=175, price=25, goldPrice=5, color1=44, color2=190, itemType="Shirt"), # Plumblossom Pink Firefly Wrap
-                    ShopItem(itemId=1195, price=25, goldPrice=5, color1=190, color2=190, itemType="Skirt"), # Firefly Green Dry Leaf Shorts
-                    ShopItem(itemId=3577, price=15, goldPrice=3, color1=44, color2=44, itemType="Shoes"), # Plumblossom Pink Ivy Lace Work Boots
+                    ShopItem(itemId=2071, price=25, goldPrice=10, color1=44, color2=190, itemType="HeadItem"), # Plumblossom Pink Little Light Antennae
+                    ShopItem(itemId=175, price=45, goldPrice=16, color1=44, color2=190, itemType="Shirt"), # Plumblossom Pink Firefly Wrap
+                    ShopItem(itemId=1195, price=45, goldPrice=16, color1=190, color2=190, itemType="Skirt"), # Firefly Green Dry Leaf Shorts
+                    ShopItem(itemId=3577, price=25, goldPrice=10, color1=44, color2=44, itemType="Shoes"), # Plumblossom Pink Ivy Lace Work Boots
 
-                    ShopItem(itemId=2071, price=15, goldPrice=3, color1=206, color2=189, itemType="HeadItem"), # Raven Black Little Light Antennae
-                    ShopItem(itemId=177, price=25, goldPrice=5, color1=206, color2=189, itemType="Shirt"), # Raven Black Ladybug Tee
-                    ShopItem(itemId=1175, price=25, goldPrice=5, color1=206, color2=189, itemType="Skirt"), # Raven Black Ladybug Shorts
-                    ShopItem(itemId=3577, price=15, goldPrice=3, color1=206, color2=206, itemType="Shoes"), # Raven Black Ivy Lace Work Boots
+                    ShopItem(itemId=2071, price=25, goldPrice=10, color1=206, color2=189, itemType="HeadItem"), # Raven Black Little Light Antennae
+                    ShopItem(itemId=177, price=45, goldPrice=16, color1=206, color2=189, itemType="Shirt"), # Raven Black Ladybug Tee
+                    ShopItem(itemId=1175, price=45, goldPrice=16, color1=206, color2=189, itemType="Skirt"), # Raven Black Ladybug Shorts
+                    ShopItem(itemId=3577, price=25, goldPrice=10, color1=206, color2=206, itemType="Shoes"), # Raven Black Ivy Lace Work Boots
 
-                    ShopItem(itemId=2149, price=15, goldPrice=3, color1=193, color2=175, itemType="HeadItem"), # Electric Green Dragonfly Mask
-                    ShopItem(itemId=178, price=25, goldPrice=5, color1=175, color2=175, itemType="Shirt"), # Creek Green Dragonfly Top 
-                    ShopItem(itemId=1173, price=25, goldPrice=5, color1=175, color2=193, itemType="Skirt"), # Creek Green Dragonfly Trousers
-                    ShopItem(itemId=3577, price=15, goldPrice=3, color1=175, color2=175, itemType="Shoes"), # Creek Green Ivy Lace Work Boots
+                    ShopItem(itemId=2149, price=25, goldPrice=10, color1=193, color2=175, itemType="HeadItem"), # Electric Green Dragonfly Mask
+                    ShopItem(itemId=178, price=45, goldPrice=16, color1=175, color2=175, itemType="Shirt"), # Creek Green Dragonfly Top 
+                    ShopItem(itemId=1173, price=45, goldPrice=16, color1=175, color2=193, itemType="Skirt"), # Creek Green Dragonfly Trousers
+                    ShopItem(itemId=3577, price=25, goldPrice=10, color1=175, color2=175, itemType="Shoes"), # Creek Green Ivy Lace Work Boots
 
-                    ShopItem(itemId=2153, price=15, goldPrice=3, color1=267, color2=27, itemType="HeadItem"), # Celestial Blue Hummingbird Mask
-                    ShopItem(itemId=190, price=25, goldPrice=5, color1=267, color2=27, itemType="Shirt"), # Celestial Blue Hummingbird Top 
-                    ShopItem(itemId=1174, price=25, goldPrice=5, color1=267, color2=267, itemType="Skirt"), # Celestial Blue Hummingbird Trousers
-                    ShopItem(itemId=3577, price=15, goldPrice=3, color1=267, color2=267, itemType="Shoes"), # Celestial Blue Ivy Lace Work Boots
+                    ShopItem(itemId=2153, price=25, goldPrice=10, color1=267, color2=27, itemType="HeadItem"), # Celestial Blue Hummingbird Mask
+                    ShopItem(itemId=190, price=45, goldPrice=16, color1=267, color2=27, itemType="Shirt"), # Celestial Blue Hummingbird Top 
+                    ShopItem(itemId=1174, price=45, goldPrice=16, color1=267, color2=267, itemType="Skirt"), # Celestial Blue Hummingbird Trousers
+                    ShopItem(itemId=3577, price=25, goldPrice=10, color1=267, color2=267, itemType="Shoes"), # Celestial Blue Ivy Lace Work Boots
                  ]
              ),
              ShopCollection(
                  collectionId=62, # Sparrow Shirts and Jackets
                  currencyId=FairiesConstants.MAPLE_LEAVES,
                  items=[
-                    ShopItem(itemId=1000033, price=25, goldPrice=5, color1=207, color2=207, itemType="Shirt"), # Diamond Blue Sunburst Tie-Dye Tee
-                    ShopItem(itemId=1000034, price=25, goldPrice=5, color1=230, color2=230, itemType="Shirt"), # Scarlet Red Striped Tie-Dye Tee
-                    ShopItem(itemId=1000035, price=25, goldPrice=5, color1=129, color2=129, itemType="Shirt"), # Fig Purple Speckled Tie-Dye Tee
-                    ShopItem(itemId=354, price=25, goldPrice=5, color1=90, color2=90, itemType="Shirt"), # Custard Yellow Horizontal Leaf Hoodie with Tan Trim
-                    ShopItem(itemId=355, price=25, goldPrice=5, color1=221, color2=221, itemType="Shirt"), # Jade Green Colorblock Stripe Hoodie
+                    ShopItem(itemId=1000033, price=45, goldPrice=16, color1=207, color2=207, itemType="Shirt"), # Diamond Blue Sunburst Tie-Dye Tee
+                    ShopItem(itemId=1000034, price=45, goldPrice=16, color1=230, color2=230, itemType="Shirt"), # Scarlet Red Striped Tie-Dye Tee
+                    ShopItem(itemId=1000035, price=45, goldPrice=16, color1=129, color2=129, itemType="Shirt"), # Fig Purple Speckled Tie-Dye Tee
+                    ShopItem(itemId=354, price=45, goldPrice=16, color1=90, color2=90, itemType="Shirt"), # Custard Yellow Horizontal Leaf Hoodie with Tan Trim
+                    ShopItem(itemId=355, price=45, goldPrice=16, color1=221, color2=221, itemType="Shirt"), # Jade Green Colorblock Stripe Hoodie
 
-                    ShopItem(itemId=353, price=25, goldPrice=5, color1=206, color2=206, itemType="Shirt"), # Raven Black Vertical Leaf Hoodie
-                    ShopItem(itemId=356, price=25, goldPrice=5, color1=216, color2=216, itemType="Shirt"), # Slate Gray Layered Blazer
-                    ShopItem(itemId=357, price=25, goldPrice=5, color1=161, color2=161, itemType="Shirt"), # Buried Treasure Brown Casual Plaid Shirt
-                    ShopItem(itemId=358, price=25, goldPrice=5, color1=209, color2=209, itemType="Shirt"), # Deep Sea Blue Denim Jacket
-                    ShopItem(itemId=359, price=25, goldPrice=5, color1=78, color2=78, itemType="Shirt"), # Fawn Brown Casual Denim Shirt
+                    ShopItem(itemId=353, price=45, goldPrice=16, color1=206, color2=206, itemType="Shirt"), # Raven Black Vertical Leaf Hoodie
+                    ShopItem(itemId=356, price=45, goldPrice=16, color1=216, color2=216, itemType="Shirt"), # Slate Gray Layered Blazer
+                    ShopItem(itemId=357, price=45, goldPrice=16, color1=161, color2=161, itemType="Shirt"), # Buried Treasure Brown Casual Plaid Shirt
+                    ShopItem(itemId=358, price=45, goldPrice=16, color1=209, color2=209, itemType="Shirt"), # Deep Sea Blue Denim Jacket
+                    ShopItem(itemId=359, price=45, goldPrice=16, color1=78, color2=78, itemType="Shirt"), # Fawn Brown Casual Denim Shirt
 
-                    ShopItem(itemId=150, price=25, goldPrice=5, color1=60, color2=60, itemType="Shirt"), # Tyrian Purple Birdy Button Down
-                    ShopItem(itemId=151, price=25, goldPrice=5, color1=265, color2=265, itemType="Shirt"), # Bright Sky Blue Palm Tree Button Down
-                    ShopItem(itemId=152, price=25, goldPrice=5, color1=81, color2=81, itemType="Shirt"), # Crimson Red Wave Button Down
-                    ShopItem(itemId=402, price=25, goldPrice=5, color1=206, color2=206, itemType="Shirt"), # Raven Black Triple Stripes Polo
+                    ShopItem(itemId=150, price=45, goldPrice=16, color1=60, color2=60, itemType="Shirt"), # Tyrian Purple Birdy Button Down
+                    ShopItem(itemId=151, price=45, goldPrice=16, color1=265, color2=265, itemType="Shirt"), # Bright Sky Blue Palm Tree Button Down
+                    ShopItem(itemId=152, price=45, goldPrice=16, color1=81, color2=81, itemType="Shirt"), # Crimson Red Wave Button Down
+                    ShopItem(itemId=402, price=45, goldPrice=16, color1=206, color2=206, itemType="Shirt"), # Raven Black Triple Stripes Polo
 
-                    ShopItem(itemId=403, price=25, goldPrice=5, color1=185, color2=185, itemType="Shirt"), # Midnight Blue Neat Stripes Polo
-                    ShopItem(itemId=404, price=25, goldPrice=5, color1=148, color2=148, itemType="Shirt"), # Pots'n'Pans Purple Super Stripes Polo
-                    ShopItem(itemId=224, price=25, goldPrice=5, color1=113, color2=113, itemType="Shirt"), # Pale Rose Red Zip Up Hoodie
-                    ShopItem(itemId=128, price=25, goldPrice=5, color1=172, color2=172, itemType="Shirt"), # Forest Green Cottonpuff Pullover
-                    ShopItem(itemId=366, price=25, goldPrice=5, color1=166, color2=166, itemType="Shirt"), # Snow White Vine Tee
+                    ShopItem(itemId=403, price=45, goldPrice=16, color1=185, color2=185, itemType="Shirt"), # Midnight Blue Neat Stripes Polo
+                    ShopItem(itemId=404, price=45, goldPrice=16, color1=148, color2=148, itemType="Shirt"), # Pots'n'Pans Purple Super Stripes Polo
+                    ShopItem(itemId=224, price=45, goldPrice=16, color1=113, color2=113, itemType="Shirt"), # Pale Rose Red Zip Up Hoodie
+                    ShopItem(itemId=128, price=45, goldPrice=16, color1=172, color2=172, itemType="Shirt"), # Forest Green Cottonpuff Pullover
+                    ShopItem(itemId=366, price=45, goldPrice=16, color1=166, color2=166, itemType="Shirt"), # Snow White Vine Tee
                     
-                    ShopItem(itemId=367, price=25, goldPrice=5, color1=113, color2=113, itemType="Shirt"), # Pale Rose Red Twisty Print Tee
-                    ShopItem(itemId=364, price=25, goldPrice=5, color1=221, color2=221, itemType="Shirt"), # Jade Green Sideswept Swirl Tee
-                    ShopItem(itemId=368, price=25, goldPrice=5, color1=180, color2=180, itemType="Shirt"), # Seashell Blue Star Print Tee
-                    ShopItem(itemId=371, price=25, goldPrice=5, color1=162, color2=162, itemType="Shirt"), # Sunglow Yellow Nifty Print Tee
-                    ShopItem(itemId=370, price=25, goldPrice=5, color1=206, color2=206, itemType="Shirt"), # Raven Black Twisty Tree Tee
+                    ShopItem(itemId=367, price=45, goldPrice=16, color1=113, color2=113, itemType="Shirt"), # Pale Rose Red Twisty Print Tee
+                    ShopItem(itemId=364, price=45, goldPrice=16, color1=221, color2=221, itemType="Shirt"), # Jade Green Sideswept Swirl Tee
+                    ShopItem(itemId=368, price=45, goldPrice=16, color1=180, color2=180, itemType="Shirt"), # Seashell Blue Star Print Tee
+                    ShopItem(itemId=371, price=45, goldPrice=16, color1=162, color2=162, itemType="Shirt"), # Sunglow Yellow Nifty Print Tee
+                    ShopItem(itemId=370, price=45, goldPrice=16, color1=206, color2=206, itemType="Shirt"), # Raven Black Twisty Tree Tee
                  ]
              ),
              ShopCollection(
                  collectionId=63, # Sparrow Man Accessories
                  currencyId=FairiesConstants.MAPLE_LEAVES,
                  items=[
-                    ShopItem(itemId=2125, price=15, goldPrice=3, color1=214, color2=214, itemType="HeadItem"), # Smokey Gray Mainland Fedora
-                    ShopItem(itemId=2182, price=15, goldPrice=3, color1=46, color2=46, itemType="HeadItem"), # Bark Brown Round Up Hat
-                    ShopItem(itemId=2132, price=15, goldPrice=3, color1=109, color2=109, itemType="HeadItem"), # Soft Orange Summer Wave Hat
-                    ShopItem(itemId=2205, price=15, goldPrice=3, color1=91, color2=91, itemType="HeadItem"), # Coconut Brown Straw Brim Hat
-                    ShopItem(itemId=2206, price=15, goldPrice=3, color1=172, color2=141, itemType="HeadItem"), # Forest Green Linen Sun Hat with Gray Trim
-                    ShopItem(itemId=2154, price=15, goldPrice=3, color1=224, color2=224, itemType="HeadItem"), # Ivory White Lined Winter Hat
-                    ShopItem(itemId=2178, price=15, goldPrice=3, color1=73, color2=73, itemType="HeadItem"), # Grape Purple Tea-brewer Cap
-                    ShopItem(itemId=2165, price=15, goldPrice=3, color1=180, color2=180, itemType="HeadItem"), # Seashell Blue Seashell Cap
-                    ShopItem(itemId=2174, price=15, goldPrice=3, color1=230, color2=230, itemType="HeadItem"), # Scarlet Red Leaf Embroidered Cap
-                    ShopItem(itemId=2190, price=15, goldPrice=3, color1=141, color2=136, itemType="HeadItem"), # Thundercloud Gray Conductor Cap with Blue Trim
-                    ShopItem(itemId=2175, price=15, goldPrice=3, color1=169, color2=169, itemType="HeadItem"), # Squirrel Gray Easy Style Cap
-                    ShopItem(itemId=2130, price=15, goldPrice=3, color1=162, color2=162, itemType="HeadItem"), # Sunglow Yellow Sporty Sparrow Band
-                    ShopItem(itemId=2135, price=15, goldPrice=3, color1=207, color2=207, itemType="HeadItem"), # Diamond Blue Sparrow Sun-Shades
-                    ShopItem(itemId=2279, price=15, goldPrice=3, color1=166, color2=166, itemType="HeadItem"), # Snow White Peppermint Swirl Glasses
-                    ShopItem(itemId=2230, price=15, goldPrice=3, color1=168, color2=168, itemType="HeadItem"), # Never Gold Merry Monocle
+                    ShopItem(itemId=2125, price=25, goldPrice=6, color1=214, color2=224, itemType="HeadItem"), # Smokey Gray Mainland Fedora
+                    ShopItem(itemId=2182, price=25, goldPrice=6, color1=46, color2=154, itemType="HeadItem"), # Bark Brown Round Up Hat
+                    ShopItem(itemId=2132, price=25, goldPrice=6, color1=109, color2=161, itemType="HeadItem"), # Soft Orange Summer Wave Hat
+                    ShopItem(itemId=2205, price=25, goldPrice=6, color1=91, color2=91, itemType="HeadItem"), # Coconut Brown Straw Brim Hat
+                    ShopItem(itemId=2206, price=25, goldPrice=6, color1=172, color2=66, itemType="HeadItem"), # Forest Green Linen Sun Hat with Gray Trim
+                    ShopItem(itemId=2154, price=25, goldPrice=6, color1=224, color2=230, itemType="HeadItem"), # Ivory White Lined Winter Hat
+                    ShopItem(itemId=2178, price=25, goldPrice=6, color1=73, color2=148, itemType="HeadItem"), # Grape Purple Tea-brewer Cap
+                    ShopItem(itemId=2165, price=25, goldPrice=6, color1=180, color2=103, itemType="HeadItem"), # Seashell Blue Seashell Cap
+                    ShopItem(itemId=2174, price=25, goldPrice=6, color1=230, color2=100, itemType="HeadItem"), # Scarlet Red Leaf Embroidered Cap
+                    ShopItem(itemId=2190, price=25, goldPrice=6, color1=141, color2=126, itemType="HeadItem"), # Thundercloud Gray Conductor Cap with Blue Trim
+                    ShopItem(itemId=2175, price=25, goldPrice=6, color1=169, color2=169, itemType="HeadItem"), # Squirrel Gray Easy Style Cap
+                    ShopItem(itemId=2130, price=25, goldPrice=6, color1=162, color2=162, itemType="HeadItem"), # Sunglow Yellow Sporty Sparrow Band
+                    ShopItem(itemId=2135, price=25, goldPrice=6, color1=207, color2=55, itemType="HeadItem"), # Diamond Blue Sparrow Sun-Shades
+                    ShopItem(itemId=2279, price=25, goldPrice=6, color1=166, color2=81, itemType="HeadItem"), # Snow White Peppermint Swirl Glasses
+                    ShopItem(itemId=2230, price=25, goldPrice=6, color1=168, color2=166, itemType="HeadItem"), # Never Gold Merry Monocle
 
-                    ShopItem(itemId=2552, price=5, goldPrice=1, color1=175, color2=175, itemType="Necklace"), # Creek Green Striped Scarf
-                    ShopItem(itemId=2558, price=5, goldPrice=1, color1=230, color2=230, itemType="Necklace"), # Scarlet Red Fringed Scarf
-                    ShopItem(itemId=2542, price=5, goldPrice=1, color1=126, color2=126, itemType="Necklace"), # Raindrop Blue Meadowland Neck Band
-                    ShopItem(itemId=2596, price=5, goldPrice=1, color1=206, color2=111, itemType="Necklace"), # Raven Black Sunburst Necklace with Yellow Trim
-                    ShopItem(itemId=2583, price=5, goldPrice=1, color1=221, color2=221, itemType="Necklace"), # Jade Green Ivy Necklace
-                    ShopItem(itemId=2582, price=5, goldPrice=1, color1=109, color2=230, itemType="Necklace"), # Soft Orange Bamboo Necklace with Scarlet Red Trim
-                    ShopItem(itemId=2541, price=5, goldPrice=1, color1=30, color2=30, itemType="Necklace"), # Pumpkin Orange Triple Gem Neck Ring
-                    ShopItem(itemId=2540, price=5, goldPrice=1, color1=60, color2=60, itemType="Necklace"), # Tyrian Purple Neverberry Neck Band
-                    ShopItem(itemId=2544, price=5, goldPrice=1, color1=266, color2=266, itemType="Necklace"), # Ocean Blue Gavin's 3-2 Neck Band
-                    ShopItem(itemId=2577, price=5, goldPrice=1, color1=221, color2=221, itemType="Necklace"), # Jade Green Trinity Leaf Torc
+                    ShopItem(itemId=2552, price=15, goldPrice=4, color1=175, color2=159, itemType="Necklace"), # Creek Green Striped Scarf
+                    ShopItem(itemId=2558, price=15, goldPrice=4, color1=230, color2=48, itemType="Necklace"), # Scarlet Red Fringed Scarf
+                    ShopItem(itemId=2542, price=15, goldPrice=4, color1=126, color2=126, itemType="Necklace"), # Raindrop Blue Meadowland Neck Band
+                    ShopItem(itemId=2596, price=15, goldPrice=4, color1=206, color2=253, itemType="Necklace"), # Raven Black Sunburst Necklace with Yellow Trim
+                    ShopItem(itemId=2583, price=15, goldPrice=4, color1=221, color2=221, itemType="Necklace"), # Jade Green Ivy Necklace
+                    ShopItem(itemId=2582, price=15, goldPrice=4, color1=109, color2=230, itemType="Necklace"), # Soft Orange Bamboo Necklace with Scarlet Red Trim
+                    ShopItem(itemId=2541, price=15, goldPrice=4, color1=30, color2=30, itemType="Necklace"), # Pumpkin Orange Triple Gem Neck Ring
+                    ShopItem(itemId=2540, price=15, goldPrice=4, color1=60, color2=60, itemType="Necklace"), # Tyrian Purple Neverberry Neck Band
+                    ShopItem(itemId=2544, price=15, goldPrice=4, color1=266, color2=266, itemType="Necklace"), # Ocean Blue Gavin's 3-2 Neck Band
+                    ShopItem(itemId=2577, price=15, goldPrice=4, color1=221, color2=202, itemType="Necklace"), # Jade Green Trinity Leaf Torc
 
-                    ShopItem(itemId=585, price=5, goldPrice=1, color1=78, color2=78, itemType="Belt"), # Fawn Brown Studded Belt
-                    ShopItem(itemId=584, price=5, goldPrice=1, color1=170, color2=170, itemType="Belt"), # Olive Green Clover Belt
-                    ShopItem(itemId=583, price=5, goldPrice=1, color1=154, color2=154, itemType="Belt"), # Beetle Brown Basic Belt
-                    ShopItem(itemId=598, price=5, goldPrice=1, color1=227, color2=227, itemType="Belt"), # Moonlight Gray Triple Gear Belt
-                    ShopItem(itemId=597, price=5, goldPrice=1, color1=75, color2=75, itemType="Belt"), # Umber Brown Gear Buckle Belt
-                    ShopItem(itemId=578, price=5, goldPrice=1, color1=28, color2=28, itemType="Belt"), # Cinnamon Brown Acorn Buckle Belt
-                    ShopItem(itemId=562, price=5, goldPrice=1, color1=208, color2=208, itemType="Belt"), # Cerulean Blue Sash Belt
-                    ShopItem(itemId=563, price=5, goldPrice=1, color1=148, color2=148, itemType="Belt"), # Pots'n'Pans Purple Cross-Stitch Belt
-                    ShopItem(itemId=564, price=5, goldPrice=1, color1=83, color2=83, itemType="Belt"), # Cherry Brown Bark Braid Belt
-                    ShopItem(itemId=561, price=5, goldPrice=1, color1=75, color2=75, itemType="Belt"), # Umber Brown Seed Band Belt
-                    ShopItem(itemId=627, price=5, goldPrice=1, color1=166, color2=166, itemType="Belt"), # Snow White Peppermint Swirl Belt
-                    ShopItem(itemId=637, price=5, goldPrice=1, color1=206, color2=111, itemType="Belt"), # Raven Black Sunburst Belt with Yellow Trim
-                    ShopItem(itemId=582, price=5, goldPrice=1, color1=180, color2=180, itemType="Belt"), # Seashell Blue Scallop Shell Belt
-                    ShopItem(itemId=581, price=5, goldPrice=1, color1=209, color2=209, itemType="Belt"), # Deep Sea Blue Seashell Belt
-                    ShopItem(itemId=592, price=5, goldPrice=1, color1=191, color2=191, itemType="Belt"), # Vidia Black Feather Friendship Belt
+                    ShopItem(itemId=585, price=15, goldPrice=4, color1=78, color2=168, itemType="Belt"), # Fawn Brown Studded Belt
+                    ShopItem(itemId=584, price=15, goldPrice=4, color1=170, color2=2, itemType="Belt"), # Olive Green Clover Belt
+                    ShopItem(itemId=583, price=15, goldPrice=4, color1=154, color2=167, itemType="Belt"), # Beetle Brown Basic Belt
+                    ShopItem(itemId=598, price=15, goldPrice=4, color1=206, color2=166, itemType="Belt"), # Moonlight Gray Triple Gear Belt
+                    ShopItem(itemId=597, price=15, goldPrice=4, color1=75, color2=89, itemType="Belt"), # Umber Brown Gear Buckle Belt
+                    ShopItem(itemId=578, price=15, goldPrice=4, color1=28, color2=189, itemType="Belt"), # Cinnamon Brown Acorn Buckle Belt
+                    ShopItem(itemId=562, price=15, goldPrice=4, color1=208, color2=208, itemType="Belt"), # Cerulean Blue Sash Belt
+                    ShopItem(itemId=563, price=15, goldPrice=4, color1=148, color2=148, itemType="Belt"), # Pots'n'Pans Purple Cross-Stitch Belt
+                    ShopItem(itemId=564, price=15, goldPrice=4, color1=83, color2=83, itemType="Belt"), # Cherry Brown Bark Braid Belt
+                    ShopItem(itemId=561, price=15, goldPrice=4, color1=75, color2=105, itemType="Belt"), # Umber Brown Seed Band Belt
+                    ShopItem(itemId=627, price=15, goldPrice=4, color1=166, color2=189, itemType="Belt"), # Snow White Peppermint Swirl Belt
+                    ShopItem(itemId=637, price=15, goldPrice=4, color1=206, color2=186, itemType="Belt"), # Raven Black Sunburst Belt with Yellow Trim
+                    ShopItem(itemId=582, price=15, goldPrice=4, color1=180, color2=236, itemType="Belt"), # Seashell Blue Scallop Shell Belt
+                    ShopItem(itemId=581, price=15, goldPrice=4, color1=209, color2=149, itemType="Belt"), # Deep Sea Blue Seashell Belt
+                    ShopItem(itemId=592, price=15, goldPrice=4, color1=191, color2=189, itemType="Belt"), # Vidia Black Feather Friendship Belt
 
-                    ShopItem(itemId=1540, price=10, goldPrice=2, color1=185, color2=185, itemType="WristItem"), # Midnight Blue Ever Never-Friend Bracelet
-                    ShopItem(itemId=1559, price=10, goldPrice=2, color1=45, color2=185, itemType="WristItem"), # Strawberry Red Friendship Cuff with Midnight Blue Trim
-                    ShopItem(itemId=1595, price=10, goldPrice=2, color1=221, color2=221, itemType="WristItem"), # Jade Green Ivy Bracelet
-                    ShopItem(itemId=1630, price=10, goldPrice=2, color1=206, color2=111, itemType="WristItem"), # Raven Black Sunburst Cuff with Yellow Trim
-                    ShopItem(itemId=1536, price=10, goldPrice=2, color1=138, color2=138, itemType="WristItem"), # Persimmon Orange Meadow Grass Wrist Wrap
-                    ShopItem(itemId=1531, price=10, goldPrice=2, color1=126, color2=126, itemType="WristItem"), # Raindrop Blue Shield Brace
-                    ShopItem(itemId=1530, price=10, goldPrice=2, color1=148, color2=148, itemType="WristItem"), # Pots'n'Pans Purple Winding Wrist Wrap
-                    ShopItem(itemId=1529, price=10, goldPrice=2, color1=168, color2=168, itemType="WristItem"), # Never Gold Quick Brace
-                    ShopItem(itemId=1596, price=10, goldPrice=2, color1=109, color2=98, itemType="WristItem"), # Soft Orange Bamboo Bracelet with Tan Trim
-                    ShopItem(itemId=1535, price=10, goldPrice=2, color1=215, color2=215, itemType="WristItem"), # Pewter Gray X-Band Wrist Wrap
-                    ShopItem(itemId=1537, price=10, goldPrice=2, color1=208, color2=208, itemType="WristItem"), # Cerulean Blue Grassblade Wrist Wrap
-                    ShopItem(itemId=1538, price=10, goldPrice=2, color1=175, color2=175, itemType="WristItem"), # Creek Green Triple Tie Wrist Wrap
-                    ShopItem(itemId=1534, price=10, goldPrice=2, color1=220, color2=220, itemType="WristItem"), # Dusty Pink Triple Cuff
-                    ShopItem(itemId=1532, price=10, goldPrice=2, color1=183, color2=183, itemType="WristItem"), # Vidia Purple Pinfeather Brace
-                    ShopItem(itemId=1584, price=10, goldPrice=2, color1=221, color2=221, itemType="WristItem"), # Jade Green Trinity Leaf Bracelet
+                    ShopItem(itemId=1540, price=15, goldPrice=4, color1=185, color2=185, itemType="WristItem"), # Midnight Blue Ever Never-Friend Bracelet
+                    ShopItem(itemId=1559, price=15, goldPrice=4, color1=45, color2=185, itemType="WristItem"), # Strawberry Red Friendship Cuff with Midnight Blue Trim
+                    ShopItem(itemId=1595, price=15, goldPrice=4, color1=221, color2=221, itemType="WristItem"), # Jade Green Ivy Bracelet
+                    ShopItem(itemId=1630, price=15, goldPrice=4, color1=206, color2=111, itemType="WristItem"), # Raven Black Sunburst Cuff with Yellow Trim
+                    ShopItem(itemId=1536, price=15, goldPrice=4, color1=138, color2=138, itemType="WristItem"), # Persimmon Orange Meadow Grass Wrist Wrap
+                    ShopItem(itemId=1531, price=15, goldPrice=4, color1=126, color2=126, itemType="WristItem"), # Raindrop Blue Shield Brace
+                    ShopItem(itemId=1530, price=15, goldPrice=4, color1=148, color2=148, itemType="WristItem"), # Pots'n'Pans Purple Winding Wrist Wrap
+                    ShopItem(itemId=1529, price=15, goldPrice=4, color1=168, color2=168, itemType="WristItem"), # Never Gold Quick Brace
+                    ShopItem(itemId=1596, price=15, goldPrice=4, color1=109, color2=98, itemType="WristItem"), # Soft Orange Bamboo Bracelet with Tan Trim
+                    ShopItem(itemId=1535, price=15, goldPrice=4, color1=215, color2=215, itemType="WristItem"), # Pewter Gray X-Band Wrist Wrap
+                    ShopItem(itemId=1537, price=15, goldPrice=4, color1=208, color2=208, itemType="WristItem"), # Cerulean Blue Grassblade Wrist Wrap
+                    ShopItem(itemId=1538, price=15, goldPrice=4, color1=175, color2=175, itemType="WristItem"), # Creek Green Triple Tie Wrist Wrap
+                    ShopItem(itemId=1534, price=15, goldPrice=4, color1=220, color2=220, itemType="WristItem"), # Dusty Pink Triple Cuff
+                    ShopItem(itemId=1532, price=15, goldPrice=4, color1=183, color2=183, itemType="WristItem"), # Vidia Purple Pinfeather Brace
+                    ShopItem(itemId=1584, price=15, goldPrice=4, color1=221, color2=221, itemType="WristItem"), # Jade Green Trinity Leaf Bracelet
 
-                    ShopItem(itemId=3044, price=5, goldPrice=1, color1=221, color2=221, itemType="AnkleItem"), # Jade Green Trinity Leaf Anklet
-                    ShopItem(itemId=3029, price=5, goldPrice=1, color1=208, color2=208, itemType="AnkleItem"), # Cerulean Blue Vine Duo Anklet
-                    ShopItem(itemId=3047, price=5, goldPrice=1, color1=230, color2=230, itemType="AnkleItem"), # Scarlet Red Bamboo Anklet
-                    ShopItem(itemId=3046, price=5, goldPrice=1, color1=221, color2=221, itemType="AnkleItem"), # Jade Green Ivy Anklet
+                    ShopItem(itemId=3044, price=15, goldPrice=4, color1=221, color2=221, itemType="AnkleItem"), # Jade Green Trinity Leaf Anklet
+                    ShopItem(itemId=3029, price=15, goldPrice=4, color1=208, color2=208, itemType="AnkleItem"), # Cerulean Blue Vine Duo Anklet
+                    ShopItem(itemId=3047, price=15, goldPrice=4, color1=230, color2=230, itemType="AnkleItem"), # Scarlet Red Bamboo Anklet
+                    ShopItem(itemId=3046, price=15, goldPrice=4, color1=221, color2=221, itemType="AnkleItem"), # Jade Green Ivy Anklet
 
-                    ShopItem(itemId=3663, price=15, goldPrice=3, color1=224, color2=224, itemType="Shoes"), # Ivory White Socks'n'Sandal Combo
-                    ShopItem(itemId=3665, price=15, goldPrice=3, color1=113, color2=113, itemType="Shoes"), # Pale Rose Red Super Sports Foot Gear
-                    ShopItem(itemId=3664, price=15, goldPrice=3, color1=175, color2=175, itemType="Shoes"), # Creek Green Fun Run Foot Gear
-                    ShopItem(itemId=3572, price=15, goldPrice=3, color1=78, color2=78, itemType="Shoes"), # Fawn Brown Tall Tied Boots
-                    ShopItem(itemId=3616, price=15, goldPrice=3, color1=118, color2=118, itemType="Shoes"), # Sapphire Blue Short Sturdy Boots
-                    ShopItem(itemId=3615, price=15, goldPrice=3, color1=10, color2=10, itemType="Shoes"), # Cantaloupe Orange Tall Sturdy Boots
-                    ShopItem(itemId=3692, price=15, goldPrice=3, color1=105, color2=105, itemType="Shoes"), # Siltstone Tan Bamboo Sandals
-                    ShopItem(itemId=3575, price=15, goldPrice=3, color1=206, color2=206, itemType="Shoes"), # Raven Black Cross-Stitch Work Boots  
+                    ShopItem(itemId=3663, price=25, goldPrice=8, color1=224, color2=224, itemType="Shoes"), # Ivory White Socks'n'Sandal Combo
+                    ShopItem(itemId=3665, price=25, goldPrice=8, color1=113, color2=113, itemType="Shoes"), # Pale Rose Red Super Sports Foot Gear
+                    ShopItem(itemId=3664, price=25, goldPrice=8, color1=175, color2=175, itemType="Shoes"), # Creek Green Fun Run Foot Gear
+                    ShopItem(itemId=3572, price=25, goldPrice=8, color1=78, color2=78, itemType="Shoes"), # Fawn Brown Tall Tied Boots
+                    ShopItem(itemId=3616, price=25, goldPrice=8, color1=118, color2=118, itemType="Shoes"), # Sapphire Blue Short Sturdy Boots
+                    ShopItem(itemId=3615, price=25, goldPrice=8, color1=10, color2=10, itemType="Shoes"), # Cantaloupe Orange Tall Sturdy Boots
+                    ShopItem(itemId=3692, price=25, goldPrice=8, color1=105, color2=105, itemType="Shoes"), # Siltstone Tan Bamboo Sandals
+                    ShopItem(itemId=3575, price=25, goldPrice=8, color1=206, color2=206, itemType="Shoes"), # Raven Black Cross-Stitch Work Boots  
                  ],
              ),
         ],
