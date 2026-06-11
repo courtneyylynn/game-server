@@ -391,7 +391,7 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
 
     def _runColorCycleTask(self, task):
         if not self.isDeleted():
-            self._applyColorStep(self, task.colors[task.cycleIndex], task.slotIndex)
+            self._applyColorStep(task.colors[task.cycleIndex], task.slotIndex)
             task.cycleIndex = (task.cycleIndex + 1) % len(task.colors)
         return task.again
 
