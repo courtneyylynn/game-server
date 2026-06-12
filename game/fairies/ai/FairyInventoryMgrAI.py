@@ -30,6 +30,10 @@ class FairyInventoryMgrAI(DistributedObjectGlobalAI):
         avId = self.air.getAvatarIdFromSender()
         avatar = self.air.doId2do.get(avId)
 
+        if not avatar:
+            self.notify.warning(f"wardrobeConversion: no avatar on AI for avId={avId}")
+            return
+
         CONV_COSTS = {
             "Shirt": 6,
             "Skirt": 7,
