@@ -41,7 +41,7 @@ class DistributedCraftingMinigameAI(DistributedInstanceBaseAI):
         recId, craftingStyle = self.recipeChoice.get(avId, (recipeId, 1))
         avatar = self.air.doId2do.get(avId)
 
-        if self.craftingStyle == 2:
+        if craftingStyle == 2:
             print("PRACTICE BAIL")
             return # don't take stuff if practicing
 
